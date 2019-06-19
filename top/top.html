@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+	<head>
+		<meta charset="utf-8">
+		<title>HTML5 Layout sample</title>
+
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css">
+		<link rel="stylesheet" href="style.css">
+
+		<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script>
+			$(() => {
+				$("#menubtn").on('click', () => {
+					$("#menu").slideToggle();
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<header>
+			<div id="site-box">
+				<section id="site">
+					<h1>
+						<a href="#">
+							<img src="info_logo.png" alt="TimeSwitch" 
+							     width="120" height="50">
+						</a>
+					</h1>
+				</section>
+			</div>
+		
+			<div id="nav-box">
+				<button type="button" id="menubtn">
+					<i class="fa fa-bars"></i>
+				</button>
+				<nav id="menu">
+					<ul>
+						<li><a href="#">ログイン</a></li>
+						<li><a href="#">フィード追加</a></li>
+						<li><a href="#">フィード一覧</a></li>
+						<li><a href="#">設定</a></li>
+						
+					</ul>
+				</nav>
+			</div>
+		</header>
+		
+		
+	</body>
+
+</html>
