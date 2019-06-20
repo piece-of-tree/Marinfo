@@ -1,0 +1,76 @@
+Microsoftは共同文書作成のためのWebベースプラットフォームであるFluid Frameworkを展示
+AmazonのマネージドKafkaがKafka Streamingのセットアップと使用の簡素化を目指す
+GitHubがDependabot自動セキュリティPRおよびその他のセキュリティ関連機能を追加
+インフラストラクチャオートメーション企業のChefがオープンソースにコミット
+ブロックチェーンの台帳のスループットと待ち時間を改善するためのMicrosoftオープンソースのCCFフレームワーク
+MicrosoftがApache Spark向けの高性能C#およびF#サポートをリリース
+構成可能なレジリエンスポリシを備えたFailsafe 2.0がリリース
+SamsungのアジャイルとリーンUXへの旅
+React 16.8 リリース - React Hooksによるロジックの再利用と構成が可能に
+WFとWCFがコミュニティに移行
+システム設計はトップダウンかボトムアップか - Vaughn Vernon氏のMicroXchg Berlinでの講演より
+ThoughtWorksがデジタル・トランスフォーメーションの推進にユーザセンターデザインを適用した方法
+アーティクル: アジャイルアンチパターン：システム思考アプローチ
+アーティクル: Scrum@Scale: Jeff Sutherland氏(アジャイル憲章の共作者、スクラムの共同創始者)に聞く
+マイクロソフト、パフォーマンス重視のWindows用React Nativeを発表
+
+{'link': 'https://www.infoq.com/jp',
+ 'links': [{'href': 'https://www.infoq.com/jp',
+            'rel': 'alternate',
+            'type': 'text/html'}],
+ 'subtitle': 'InfoQ フィード',
+ 'subtitle_detail': {'base': 'https://feed.infoq.com/jp',
+                     'language': None,
+                     'type': 'text/html',
+                     'value': 'InfoQ フィード'},
+ 'title': 'InfoQ',
+ 'title_detail': {'base': 'https://feed.infoq.com/jp',
+                  'language': None,
+                  'type': 'text/plain',
+                  'value': 'InfoQ'}}
+
+
+{'author': 'Sergio De Simone',
+ 'author_detail': {'name': 'Sergio De Simone'},
+ 'authors': [{'name': 'Sergio De Simone'}],
+ 'dc_identifier': '/news/2019/06/aws-managed-kafka-ga/ja',
+ 'guidislink': False,
+ 'id': 'https://www.infoq.com/jp/news/2019/06/aws-managed-kafka-ga?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global',
+ 'link': 'https://www.infoq.com/jp/news/2019/06/aws-managed-kafka-ga?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global',
+ 'links': [{'href': 'https://www.infoq.com/jp/news/2019/06/aws-managed-kafka-ga?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global',
+            'rel': 'alternate',
+            'type': 'text/html'}],
+ 'published': 'Mon, 17 Jun 2019 05:39:00 GMT',
+ 'published_parsed': time.struct_time(tm_year=2019, tm_mon=6, tm_mday=17, tm_hour=5, tm_min=39, tm_sec=0, tm_wday=0, tm_yday=168, tm_isdst=0),
+ 'summary': '<img src="https://www.infoq.com/styles/i/logo_bigger.jpg"/><p>AWS '
+            're：invent 2018でパブリックプレビューとして導入された、Kafka用のAmazon Managed '
+            'Streaming（MSK）は現在一般に利用可能である。 Amazon '
+            'MSKは、Kafkaをベースにしたストリーミングアプリケーションの構築と実行を容易にすることを目的としている。</p> <i>By '
+            'Sergio De Simone</i> <i> Translated by  編集部T _</i>',
+ 'summary_detail': {'base': 'https://feed.infoq.com/jp',
+                    'language': None,
+                    'type': 'text/html',
+                    'value': '<img '
+                             'src="https://www.infoq.com/styles/i/logo_bigger.jpg"/><p>AWS '
+                             're：invent 2018でパブリックプレビューとして導入された、Kafka用のAmazon '
+                             'Managed Streaming（MSK）は現在一般に利用可能である。 Amazon '
+                             'MSKは、Kafkaをベースにしたストリーミングアプリケーションの構築と実行を容易にすることを目的としている。</p> '
+                             '<i>By Sergio De Simone</i> <i> Translated by  '
+                             '編集部T _</i>'},
+ 'tags': [{'label': None, 'scheme': None, 'term': 'Amazon Webサービス'},
+          {'label': None, 'scheme': None, 'term': 'Event Stream Processing'},
+          {'label': None, 'scheme': None, 'term': 'Amazon'},
+          {'label': None, 'scheme': None, 'term': 'Event Driven Architecture'},
+          {'label': None, 'scheme': None, 'term': 'Architecture'},
+          {'label': None, 'scheme': None, 'term': 'クラウドコンピューティング'},
+          {'label': None, 'scheme': None, 'term': 'DevOps'},
+          {'label': None, 'scheme': None, 'term': 'デベロップメント'},
+          {'label': None, 'scheme': None, 'term': 'ニュース'}],
+ 'title': 'AmazonのマネージドKafkaがKafka Streamingのセットアップと使用の簡素化を目指す',
+ 'title_detail': {'base': 'https://feed.infoq.com/jp',
+                  'language': None,
+                  'type': 'text/plain',
+                  'value': 'AmazonのマネージドKafkaがKafka '
+                           'Streamingのセットアップと使用の簡素化を目指す'},
+ 'updated': '2019-06-17T05:39:00Z',
+ 'updated_parsed': time.struct_time(tm_year=2019, tm_mon=6, tm_mday=17, tm_hour=5, tm_min=39, tm_sec=0, tm_wday=0, tm_yday=168, tm_isdst=0)}
