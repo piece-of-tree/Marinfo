@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML5 Layout sample</title>
+	<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css">
+		<link rel="stylesheet" href="style.css">
+		<script>
+			$(() => {
+				$("#menubtn").on('click', () => {
+					$("#menu").slideToggle();
+				});
+			});
+		</script>
+	<meta charset="utf-8">
+	<title>Supported-rss</title>
+	<style>
+		.tittle{
+
+		}
+		figure{
+			border-width: 5px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+			<div id="site-box">
+				<section id="site">
+					<h1>
+						<a href="#">
+							<img src="info_logo.png"
+							     width="120" height="50">
+						</a>
+					</h1>
+				</section>
+			</div>
+		
+			<div id="nav-box">
+				<button type="button" id="menubtn">
+					<i class="fa fa-bars"></i>
+				</button>
+				<nav id="menu">
+					<ul>
+						<li><a href="#">ログイン</a></li>
+						<li><a href="#">フィード追加</a></li>
+						<li><a href="#">フィード一覧</a></li>
+						<li><a href="#">設定</a></li>
+						
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+	<h1>フェード追加</h1>
+<form>
+
+	<input type="text" name="URL" placeholder="Input URL"><button type="button">add</button>
+</form>
+
+<div id="list">
+			<ul class="shinbunList">
+					<p class="item">
+						<li><a href=""><img id="Mainpic" src="ogimage.png" width="100px"><font size="6">読売新聞</font>
+						<button type="button">Add</button>
+				 		</a></li>
+
+				 		<li><a href=""><img id="Mainpic" src="asahi.png" width="100px"><font size="6">朝日新聞</font>
+						<button type="button">Add</button>
+				 		</a></li>
+
+				 		<li><a href=""><img id="Mainpic" src="mainichi.png" width="100px"><font size="6">毎日新聞</font>
+						<button type="button">Add</button>
+				 		</a></li>
+
+				 		<li><a href=""><img id="Mainpic" src="nikkei.png" width="100px"><font size="6">日経新聞</font>
+						<button type="button">Add</button>
+				 		</a></li>
+
+				 		<li><a href=""><img id="Mainpic" src="sankei.jpg" width="100px"><font size="6">産経新聞</font>
+						<button type="button">Add</button>
+				 		</a></li>
+
+				 		<li><a href=""><img id="Mainpic" src="yahoo.jpg" width="100px"><font size="6">ヤフーニュース</font>
+						<button type="button">Add</button>
+				 		</a></li>
+				 	</p>   
+			</ul>
+</div>
+<script>
+	// const logo = document.
+	// function Items = {
+	// data : [],
+	// 	addItem : function(logo, name, button){
+	// 		const item = {
+	// 			logo = logo,
+	// 			name = name,
+	// 			button = button
+
+	// 		};
+	// 		this.data.push(item);
+	// Items.addItem()
+		 // $(function addItem(text,source){
+
+	// 	const $list = $('.shinbunList');
+	// 	const $li = ('<li>');	
+	// 	const $img = $('<a href=""><img src="nikkei.png" width="100px"></a>');
+	// 	const $name = $('<span class="text">').text(text);
+	// 	const $button = $('<button type="button">Add</button>');
+	// 	$li.append($img)
+	// 	   .append($name)
+	// 	   .append($button);
+
+	// 	$list.append($li);
+
+ //    });
+	// // $(function addItem(){
+
+	// 	const $list = $('.shinbunList');
+			
+	// 		const $img = $('#Mainpic').attr("src","nikkei.png");
+	// 		$li.append(img);
+		
+	// 	$list.append($li);
+ //    });
+
+    
+
+	// $function logo1 (source,name){
+	// 	const el = document.getElementByID('Mainpic');
+	// 	const source = el.src;
+ //        const ec = document.getElementByClassName('item')
+	// 	return "ec";
+	// 	document.write(name);	
+	// }
+	// logo1("nikkei.png","日経新聞");
+	// logo1("mainichi.png","毎日新聞");
+	// logo1("asahi.png","朝日新聞");
+
+</script>
+
+
+</body>
+</html>
