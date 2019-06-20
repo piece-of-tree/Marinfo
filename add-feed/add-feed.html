@@ -61,11 +61,11 @@
 <div id="list">
 			<ul class="shinbunList">
 					<p class="item">
-						<li><a href=""><img id="Mainpic" src="ogimage.png" width="100px"><font size="6">読売新聞</font>
+						<li><a href=""><img id="Mainpic" src="ogimage.png" width="100px"><font size="6"><span class = "name">読売新聞</span></font>
 						<button type="button">Add</button>
 				 		</a></li>
 
-				 		<li><a href=""><img id="Mainpic" src="asahi.png" width="100px"><font size="6">朝日新聞</font>
+				 		<!-- <li><a href=""><img id="Mainpic" src="asahi.png" width="100px"><font size="6">朝日新聞</font>
 						<button type="button">Add</button>
 				 		</a></li>
 
@@ -83,25 +83,24 @@
 
 				 		<li><a href=""><img id="Mainpic" src="yahoo.jpg" width="100px"><font size="6">ヤフーニュース</font>
 						<button type="button">Add</button>
-				 		</a></li>
+				 		</a></li> -->
 				 	</p>   
 			</ul>
 </div>
 <script>
-	// const logo = document.
-	// function Items = {
-	// data : [],
-	// 	addItem : function(logo, name, button){
-	// 		const item = {
-	// 			logo = logo,
-	// 			name = name,
-	// 			button = button
+	const logo = document.
+	function Items = {
+	data : [],
+		addItem : function(logo, name){
+			const item = {
+				getElementByID('Mainpic.src') = logo,
+				getElementByClassName('name') = name,
 
-	// 		};
-	// 		this.data.push(item);
-	// Items.addItem()
+			};
+			this.data.push(item);
+	Items.addItem("asahi.png","朝日新聞");
 		 // $(function addItem(text,source){
-
+     
 	// 	const $list = $('.shinbunList');
 	// 	const $li = ('<li>');	
 	// 	const $img = $('<a href=""><img src="nikkei.png" width="100px"></a>');
