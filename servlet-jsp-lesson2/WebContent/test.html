@@ -1,0 +1,174 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>addfeed</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+ 
+<div class="jumbotron text-center">
+  <h1>新聞社一覧</h1>
+  
+</div>
+   
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card" id="card1" style="width: 11rem;">
+        <a href=""><img src="asahi.jpg" class="card-img-top"></a>
+          <div class="card-body">
+          <h5 class="card-title"><strong>朝日新聞</strong></h5>
+          <input type="button" id="button1" class="btn btn-primary" value="追加"/>   
+        </div>
+      </div>
+    </div>
+
+
+  
+    <div class="col-md-4">
+     <div class="card" style="width: 11em;">
+      <a href=""><img src="mainichi.jpg" class="card-img-top"></a>
+        <div class="card-body">
+          <h5 class="card-title"><strong>毎日新聞</strong></h5>
+           <input type="button" id="button2" class="btn btn-primary" value="追加"/>
+        </div>
+      </div>
+    </div>
+
+
+
+       
+   <div class="col-md-4">
+     <div class="card" style="width: 11em;">
+      <a href=""><img src="nikkei.jpg" class="card-img-top"></a>
+        <div class="card-body">
+          <h5 class="card-title"><strong>日経新聞</strong></h5>
+          <input type="button" id="button3" class="btn btn-primary" value="追加"/>
+        </div>
+      </div>
+    </div>
+ 
+</div>
+
+  <div class="row">
+    <div class="col-md-4">
+     <div class="card" style="width: 11em;">
+      <a href=""><img src="ogimage.png" class="card-img-top"></a>
+        <div class="card-body">
+          <h5 class="card-title"><strong>読売新聞</strong></h5>
+          <input type="button" id="button4" class="btn btn-primary" value="追加"/>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-md-4">
+     <div class="card" style="width: 11em;">
+      <a href=""><img src="sankei.jpg" class="card-img-top"></a>
+        <div class="card-body">
+          <h5 class="card-title"><strong>産経新聞</strong></h5>
+          <input type="button" id="button5" class="btn btn-primary" value="追加"/>
+        </div>
+      </div>
+    </div>
+
+
+   <div class="col-md-4">
+     <div class="card" id="card6" style="width: 11em;">
+      <a href=""><img src="yahoo.jpg" class="card-img-top"></a>
+        <div class="card-body">
+          <h5 class="card-title"><strong>Yahoo! News</strong></h5>
+          <input type="button" id="button6" class="btn btn-primary" value="追加"/>
+         
+        </div>
+      </div>
+    </div>
+ </div>
+
+<script>
+  const button1 = document.getElementById('button1')
+  const button2 = document.getElementById('button2')
+  const button3 = document.getElementById('button3')
+  const button4 = document.getElementById('button4')   
+  const button5 = document.getElementById('button5')
+  const button6 = document.getElementById('button6')
+  const button7 = document.getElementById('button7')
+  button1.onclick = function(){
+    button1.value = '追加済み';
+    card1.style.background = 'grey';
+    
+  };
+    
+  button2.onclick = function(){
+    button2.value = '追加済み';
+
+  };
+   button3.onclick = function(){
+    button3.value = '追加済み';
+  };
+   button4.onclick = function(){
+    button4.value = '追加済み';
+  };
+   button5.onclick = function(){
+    button5.value = '追加済み';
+  };
+   button6.onclick = function(){
+    button6.value = '追加済み';
+    card6.style.background = 'grey';
+  };
+   button.onclick = function(){
+    button.value = '追加済み';
+  };
+</script> 
+     
+
+ 
+</body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BootstrapDemo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+ 
+<div class="jumbotron text-center">
+  <h1>新聞社一覧</h1>
+  
+</div>
+   
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+    	<div class="card" style="width: 8rem;">
+  <img src="asahi.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">朝日新聞</h5>
+    <a href="#" class="btn btn-primary">add</a>
+  </div></div>
+  <!-- <div class="col-md-4">
+  	<div class="card" style="width: 8rem;">
+  <img src="asahi.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">朝日新聞</h5>
+    <a href="#" class="btn btn-primary">add</a>
+  </div> -->
+</div>
+     
+
+ 
+</body>
+>>>>>>> ca343905522e2ebe350b758ccb77303df9247b5d
+</html>
