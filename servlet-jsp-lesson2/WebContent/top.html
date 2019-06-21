@@ -32,12 +32,14 @@
 		});
 	</script>
 	<script>
-		$.getJSON('http://13.231.180.101:5000/feeds/', feeds =>  {
-			feeds.forEach(feed => {
-				$('#feed-list').append(`<div class="r"><div class="card c-3">
-					<div class="font"><p><li><a href="${feed.link}">${feed.title}</a></li></p></div></div></div>`);
-				});
+			$.getJSON('http://13.231.180.101:5000/feeds/', feeds =>  {
+				feeds.forEach(feed => {
+					$('#feed-list').append(`<div class="r"><div class="card c-3">
+						<div class="font"><p><li><a href="${feed.link}">${feed.title}</a></li></p></div></div></div>`);
+					});
+				
 			});
+
 		</script>
 
 	</head>
@@ -73,6 +75,7 @@
 
 		<div id ="pane">
 			<p id="feed-list"></p>	
+			<p id="endinfo">記事は以上です</p>
 		</div>
 	</body>
 
