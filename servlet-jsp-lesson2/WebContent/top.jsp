@@ -1,28 +1,80 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib uri="http://sargue.net/jsptags/time" prefix="javatime"%>
-
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Top</title>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title>HTML5 Layout sample</title>
+
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css">
+
+	<link rel="stylesheet" href="css\web-grid.css">
+
+	<link rel="stylesheet" href="css\style.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+
+
+	<!-- <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>	
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+	<script src="js/handle-scroll-event.js"></script>
+
+	<script>
+		$(() => {
+			$("#menubtn").on('click', () => {
+				$("#menu").slideToggle();
+			});
+		});
+	</script>
+	<script>
+		$.getJSON('http://13.231.180.101:5000/feeds/', feeds =>  {
+			feeds.forEach(feed => {
+				$('#feed-list').append(`<div class="r"><div class="card c-3">
+					<div class="font"><p><li><a href="${feed.link}">${feed.title}</a></li></p></div></div></div>`);
+				});
+			});
+		</script>
+
 	</head>
-	<body class="#efebe9 brown lighten-5">
-		<div class="container">
-			<nav>
-				<div class="nav-wrapper #a1887f brown lighten-2">
-					<a href="#" class="brand-logo">Top</a>
-					<ul id="nav-mobile" class="right hide-on-med-and-down">
-						<li>LastLoginTime: <javatime:format value="${account.lastLoginTime}" pattern="hh:mm:ss" /></li>
-						<li><a href="logout.do"><i class="material-icons">exit_to_app</i></a></li>
+
+	<body>
+		<header>
+			<div id="site-box">
+				<section id="site">
+					<h1>
+						<a href="#">
+							<img src="info_logo.png" alt="Marinfo" 
+							width="120" height="50">
+						</a>
+					</h1>
+				</section>
+			</div>
+
+			<div id="nav-box">
+				<button type="button" id="menubtn">
+					<i class="fa fa-bars"></i>
+				</button>
+				<nav id="menu">
+					<ul>
+						<li><a href="#">ログイン</a></li>
+						<li><a href="#">フィード一覧</a></li>
+						<li><a href="#">フィード追加</a></li>
 					</ul>
-				</div>
-			</nav>
-			<h1>Login Successful</h1>
-			<h2>Welcome ${account.userName}</h2>
+				</nav>
+			</div>
+		</header>
+
+		<!-- <ul id="feed-list"></ul> -->
+
+		<div id ="pane">
+			<p id="feed-list"></p>	
 		</div>
 	</body>
-</html>
+
+	</html>
