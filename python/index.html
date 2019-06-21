@@ -18,7 +18,7 @@
 			    // });
 
 				// jQueryのgetJSON()を使用する場合
-				$.getJSON('http://127.0.0.1:5000/feeds/', feeds =>  {
+				$.getJSON('http://13.231.180.101:5000/feeds/', feeds =>  {
 					feeds.forEach(feed => {
 						$('#feed-list').append(`<li><a href="${feed.link}">${feed.title}</a>${feed.date}</li>`);
 					});
