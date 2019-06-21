@@ -217,13 +217,26 @@ article#main {
 		border-bottom: solid 1px #dddddd;
 	}
 }
+	div.r{
+		list-style: none;
+		overflow: hidden;
+	}
 
-div.card{
-			left: 25%;
-			width: 250%;
-			height: 50px;
-			margin-bottom:5px;
+/*表示カードの詳細設定*/
+/*ココらへんいじると箱がでっかくなったり小さくなったりするよ*/
+		div.card{
+			width: 75%;
+			height: 250px;
+			margin-bottom:50px;
 			border: solid 1px #ffffe0;
 			border-radius:5px;
-			background-color: #ffffa8;
+			background-color: #f5f5f5;
+			left: 200px;
+		}
+
+/*記事カード内の詳細設定*/
+/*箱の中の文字とかいろいろ決められるよ*/
+		.font{
+			font-size: 150%;
+			float: left;
 		}

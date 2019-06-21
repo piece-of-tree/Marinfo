@@ -8,22 +8,14 @@
 
 	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css">
 
-	<link rel="stylesheet" href="css/web-grid.css">
+	<link rel="stylesheet" href="C:\Users\COMNIC09\Documents\GitHub\Marinfo\top\css\web-grid.css">
 
 	<link rel="stylesheet" href="C:\Users\COMNIC09\Documents\GitHub\Marinfo\top\css\style.css">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-	<style>	
-		div.card{
-			width: 250%;
-			height: 50px;
-			margin-bottom:5px;
-			border: solid 1px #ffffe0;
-			border-radius:5px;
-			background-color: #ffffa8;
-		}
-	</style>
+
+
 
 	<!-- <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script> -->
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>	
@@ -42,7 +34,8 @@
 	<script>
 		$.getJSON('http://13.231.180.101:5000/feeds/', feeds =>  {
 			feeds.forEach(feed => {
-				$('#feed-list').append(`<div><a href="${feed.link}">${feed.title}</a>${feed.date}</div>`);
+				$('#feed-list').append(`<div class="r"><div class="card c-3">
+					<div class="font"><p><li><a href="${feed.link}">${feed.title}</a></li></p></div></div></div>`);
 				});
 			});
 		</script>
@@ -79,65 +72,7 @@
 		<!-- <ul id="feed-list"></ul> -->
 
 		<div id ="pane">
-			<div class="r">
-				<div class="card c-4">
-					<p id="feed-list"></p>
-				</div>
-			</div>
-			
-			<div class="r">
-				<div class="card c-4">
-					<p class="item">ここにタイトル</p>
-				</div>
-			</div>
-
-			
-			<div class="r">
-				<div class="card c-4">
-					<p class="item">ここにタイトル</p>
-				</div>
-			</div>
-
-			<div class="r">
-				<div class="card c-4">
-					<p class="item">ここにタイトル</p>
-				</div>
-			</div>
-			<div class="r">
-				<div class="card c-4">
-					<p class="item">ここにタイトル</p>
-				</div>
-			</div>
-
-			<div class="r">
-				<div class="card c-4">
-					<p class="item">ここにタイトル</p>
-				</div>
-			</div>
-
-			<div class="r">
-				<div class="card c-4">
-					<p class="item">ここにタイトル</p>
-				</div>
-			</div>
-
-			<div class="r">
-				<div class="card c-4">
-					<p class="item">ここにタイトル</p>
-				</div>
-			</div>
-
-			<div class="r">
-				<div class="card c-4">
-					<p class="item">ここにタイトル</p>
-				</div>
-			</div>
-
-			<div class="r">
-				<div class="card c-4">
-					<p class="item">ここにタイトル</p>
-				</div>
-			</div>
+			<p id="feed-list"></p>	
 		</div>
 	</body>
 
