@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>HTML5 Layout sample</title>
-	<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<title>追加Feed</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
 		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css">
 		<link rel="stylesheet" href="style.css">
 		<script>
@@ -13,7 +14,6 @@
 			});
 		</script>
 	<meta charset="utf-8">
-	<title>Supported-rss</title>
 	<style>
 		.tittle{
 
@@ -24,6 +24,11 @@
 	</style>
 </head>
 <body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+  	<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
 	<header>
 			<div id="site-box">
 				<section id="site">
@@ -52,91 +57,105 @@
 			</div>
 		</header>
 
-	<h1>フェード追加</h1>
-<form>
+<div class="jumbotron text-center">  
 
-	<input type="text" name="URL" placeholder="Input URL"><button type="button">add</button>
-</form>
+  	<h1>フィード追加</h1>
 
-<div id="list">
-			<ul class="shinbunList">
-					<p class="item">
-						<li><a href=""><img id="Mainpic" src="ogimage.png" width="100px"><font size="6"><span class = "name">読売新聞</span></font>
-						<button type="button">Add</button>
-				 		</a></li>
 
-				 		<!-- <li><a href=""><img id="Mainpic" src="asahi.png" width="100px"><font size="6">朝日新聞</font>
-						<button type="button">Add</button>
-				 		</a></li>
+	<form>
 
-				 		<li><a href=""><img id="Mainpic" src="mainichi.png" width="100px"><font size="6">毎日新聞</font>
-						<button type="button">Add</button>
-				 		</a></li>
+		<input class="input" type="text" name="URL" placeholder="Input URL"><button type="button">追加</button>
 
-				 		<li><a href=""><img id="Mainpic" src="nikkei.png" width="100px"><font size="6">日経新聞</font>
-						<button type="button">Add</button>
-				 		</a></li>
+	</form>
 
-				 		<li><a href=""><img id="Mainpic" src="sankei.jpg" width="100px"><font size="6">産経新聞</font>
-						<button type="button">Add</button>
-				 		</a></li>
+ </div>
 
-				 		<li><a href=""><img id="Mainpic" src="yahoo.jpg" width="100px"><font size="6">ヤフーニュース</font>
-						<button type="button">Add</button>
-				 		</a></li> -->
-				 	</p>   
-			</ul>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+    	<div class="card" style="width: 11rem;">
+      		<img src="asahi.jpg" class="card-img-top">
+        	<div class="card-body">
+          <h5 class="card-title"><strong>朝日新聞</strong></h5>
+          <a href="#" class="btn btn-primary">追加</a>
+        </div>
+      </div>
+    </div>
+
+
+  
+    <div class="col-md-4">
+  	 <div class="card" style="width: 11em;">
+      <img src="mainichi.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title"><strong>毎日新聞</strong></h5>
+          <a href="#" class="btn btn-primary">追加</a>
+        </div>
+      </div>
+    </div>
+
+
+
+       
+   <div class="col-md-4">
+  	 <div class="card" style="width: 11em;">
+      <img src="nikkei.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title"><strong>日経新聞</strong></h5>
+          <a href="#" class="btn btn-primary">追加</a>
+        </div>
+      </div>
+    </div>
+ 
 </div>
+
+  <div class="row">
+    <div class="col-md-4">
+  	 <div class="card" style="width: 11em;">
+      <img src="ogimage.png" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title"><strong>読売新聞</strong></h5>
+          <a href="#" class="btn btn-primary">追加</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-md-4">
+  	 <div class="card" style="width: 11em;">
+      <img src="sankei.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title"><strong>産経新聞</strong></h5>
+          <a href="#" class="btn btn-primary">追加</a>
+        </div>
+      </div>
+    </div>
+
+
+   <div class="col-md-4">
+  	 <div class="card" style="width: 11em;">
+      <img src="yahoo.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title"><strong>Yahoo! News</strong></h5>
+          <a href="#"><button class="btn btn-primary">追加</button></a>
+          <button onclick="myFunction()"><span>add</span></button>
+        </div>
+      </div>
+    </div>
+ </div>
+
 <script>
-	const logo = document.
-	function Items = {
-	data : [],
-		addItem : function(logo, name){
-			const item = {
-				getElementByID('Mainpic.src') = logo,
-				getElementByClassName('name') = name,
+	var div = document.getElementByTagName(span);
+	function myFunction(){
+		div.innerHTML = '追加済み';
+		alert("Chào mừng bạn đến với freetuts.net");
+	};
+</script>	
 
-			};
-			this.data.push(item);
-	Items.addItem("asahi.png","朝日新聞");
-		 // $(function addItem(text,source){
-     
-	// 	const $list = $('.shinbunList');
-	// 	const $li = ('<li>');	
-	// 	const $img = $('<a href=""><img src="nikkei.png" width="100px"></a>');
-	// 	const $name = $('<span class="text">').text(text);
-	// 	const $button = $('<button type="button">Add</button>');
-	// 	$li.append($img)
-	// 	   .append($name)
-	// 	   .append($button);
 
-	// 	$list.append($li);
+	
 
- //    });
-	// // $(function addItem(){
 
-	// 	const $list = $('.shinbunList');
-			
-	// 		const $img = $('#Mainpic').attr("src","nikkei.png");
-	// 		$li.append(img);
-		
-	// 	$list.append($li);
- //    });
-
-    
-
-	// $function logo1 (source,name){
-	// 	const el = document.getElementByID('Mainpic');
-	// 	const source = el.src;
- //        const ec = document.getElementByClassName('item')
-	// 	return "ec";
-	// 	document.write(name);	
-	// }
-	// logo1("nikkei.png","日経新聞");
-	// logo1("mainichi.png","毎日新聞");
-	// logo1("asahi.png","朝日新聞");
-
-</script>
 
 
 </body>
