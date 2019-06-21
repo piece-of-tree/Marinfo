@@ -1,0 +1,9 @@
+<Context>
+   <Resource name="ds/mariadb/test" 
+             type="javax.sql.DataSource"
+             driverClassName="org.mariadb.jdbc.Driver"
+             url="jdbc:mariadb://localhost/test"
+             username="root"
+             password="mariadb"
+   />
+</Context>

@@ -1,0 +1,6 @@
+<dataset>
+    <ACCOUNT user_name="John"
+             password="admin" />
+    <ACCOUNT user_name="Bill"
+             password="test" />
+</dataset>
