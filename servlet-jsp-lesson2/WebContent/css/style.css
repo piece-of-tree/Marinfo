@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+
+
 body {
 	margin: 0;
 	font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif;
@@ -225,8 +227,8 @@ article#main {
 /*表示カードの詳細設定*/
 /*ココらへんいじると箱がでっかくなったり小さくなったりするよ*/
 		div.card{
-			width: 75%;
-			height: 250px;
+			width: 80%;
+			height: 260px;
 			margin-bottom:50px;
 			border: solid 1px #ffffe0;
 			border-radius:5px;
@@ -239,8 +241,17 @@ article#main {
 		.font{
 			font-size: 125%;
 			float: left;
+
+			font-family: 'Kosugi Maru', sans-serif;
 		}
 
 		#endinfo{
 			text-align: center;
 		}
+
+		p.font2{
+			font-family: 'Julius Sans One', sans-serif;
+			font-size: 85%;
+		}
+
+
