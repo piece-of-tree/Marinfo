@@ -30,6 +30,15 @@
 	<script src="js/handle-scroll-event.js"></script>
 
 	<script>
+		$(function){
+			$.post("http://13.231.180.101:5000/snedName/",
+				{ message:${account.userName});
+
+		}
+
+	</script>
+
+	<script>
 		$(() => {
 			$("#menubtn").on('click', () => {
 				$("#menu").slideToggle();

@@ -224,17 +224,7 @@ article#main {
 		overflow: hidden;
 	}
 
-/*表示カードの詳細設定*/
-/*ココらへんいじると箱がでっかくなったり小さくなったりするよ*/
-		div.card{
-			width: 80%;
-			height: 260px;
-			margin-bottom:50px;
-			border: solid 1px #ffffe0;
-			border-radius:5px;
-			background-color: #f5f5f5;
-			left: 170px;
-		}
+
 
 /*記事カード内の詳細設定*/
 /*箱の中の文字とかいろいろ決められるよ*/
