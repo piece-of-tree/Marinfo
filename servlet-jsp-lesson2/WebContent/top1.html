@@ -45,9 +45,6 @@
 				$('#btn1').click(function(){
 					$.post("http://13.231.180.101:5000/sendtext/",
 						{ message: "https://news.yahoo.co.jp/pickup/rss.xml" },
-						function(dt){
-							#btn1.value = '追加済み'
-						}
 						);
 				});
 			});
