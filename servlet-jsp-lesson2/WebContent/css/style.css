@@ -84,16 +84,16 @@ article#main {
 	}
 
 	/* ナビゲーションメニュー（縦並び） */
-	nav	{
+	#menu	{
 		display: none;
 	}
 
-	nav ul {margin: 0;
+	#menu ul {margin: 0;
 		padding: 0;
 		list-style: none;
 	}
 
-	nav li a {
+	#menu li a {
 		display: block;
 		padding: 5px;
 		color: #000000;
@@ -101,7 +101,7 @@ article#main {
 		text-decoration: none;
 	}
 
-	nav li a:hover {
+	#menu li a:hover {
 		background-color: #eeeeee;
 	}
 }
@@ -116,17 +116,17 @@ article#main {
 	}
 
 	/* ナビゲーション */
-	nav	{
+	#menu	{
 		display: block !important;
 	}
 
-	nav ul {
+	#menu ul {
 		margin: 0;
 		padding: 0;
 		list-style: none;
 	}
 
-	nav li a {
+	#menu li a {
 		display: block;
 		padding: 10px 15px;
 		color: #000000;
@@ -134,11 +134,11 @@ article#main {
 		text-decoration: none;
 	}
 
-	nav li a:hover {
+	#menu li a:hover {
 		background-color: #eeeeee;
 	}
 
-	nav li {
+	#menu li {
 		float: left;
 		width: auto;
 	}
