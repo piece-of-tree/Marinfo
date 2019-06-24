@@ -31,16 +31,27 @@
 			});
 		});
 	</script>
+
+
 	<script>
-	<script>
-	$.getJSON('http://13.231.180.101:5000/feeds/', feeds =>  {
-		feeds.forEach(feed => {
-			$('#feed-list').append(`<div class="r"><div class="card c-3">
-				<div class="font"><p><li><a href="${feed.link}">${feed.title}</a></li></p></div></div></div>`);
+
+		let count = 0;
+		$.getJSON('http://13.231.180.101:5000/feeds/', feeds =>  {
+			feeds.forEach(feed => {
+
+				if (count % 3 ==0){
+					di = $('<div class="r">');
+					$('#feed-list').append(di);
+				}
+
+				di.append(`<div class="card c-3"><div class="font"><p><li><a href="${feed.link}">${feed.title}<br><br>${feed.date}</a></li></p></div></div></div>`)
+				count ++;
+				// $('#feed-list').append(`<div class="r"><div class="card c-3">
+				// 	<div class="font"><p><li><a href="${feed.link}">${feed.title}</a></li></p></div></div></div>`);
+				});
 			});
-		});
 	</script>
-		</script>
+
 
 	</head>
 
@@ -76,6 +87,8 @@
 		<div id ="pane">
 			<p id="feed-list"></p>	
 		</div>
+
+		<div id ="endinfo">これ以上記事はありません</div>
 	</body>
 
 	</html>

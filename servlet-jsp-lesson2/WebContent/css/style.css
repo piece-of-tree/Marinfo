@@ -231,12 +231,16 @@ article#main {
 			border: solid 1px #ffffe0;
 			border-radius:5px;
 			background-color: #f5f5f5;
-			left: 200px;
+			left: 170px;
 		}
 
 /*記事カード内の詳細設定*/
 /*箱の中の文字とかいろいろ決められるよ*/
 		.font{
-			font-size: 150%;
+			font-size: 125%;
 			float: left;
+		}
+
+		#endinfo{
+			text-align: center;
 		}
