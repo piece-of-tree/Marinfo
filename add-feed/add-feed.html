@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
 		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css">
-		<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css\style.css">
 		<script>
 			$(() => {
 				$("#menubtn").on('click', () => {
@@ -29,31 +29,31 @@
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
   	<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<header>
-			<div id="site-box">
-				<section id="site">
-					<h1>
-						<a href="#">
-							<img src="info_logo.png"
-							     width="120" height="50">
-						</a>
-					</h1>
-				</section>
-			</div>
-		
-			<div id="nav-box">
-				<button type="button" id="menubtn">
-					<i class="fa fa-bars"></i>
-				</button>
-				<nav id="menu">
-					<ul>
-						<li><a href="#">ログイン</a></li>
-						<li><a href="#">フィード追加</a></li>
-						<li><a href="#">フィード一覧</a></li>
-						<li><a href="#">設定</a></li>
-						
-					</ul>
-				</nav>
-			</div>
+			 
+      <div id="site-box">
+        <section id="site">
+          <h1>
+            <a href="#">
+              <img src="info_logo.png" alt="Marinfo" 
+              width="120" height="50">
+            </a>
+          </h1>
+        </section>
+      </div>
+
+      <div id="nav-box">
+        <button type="button" id="menubtn">
+          <i class="fa fa-bars"></i>
+        </button>
+        <nav id="menu">
+          <ul>
+            <li><a href="top.html">トップ</a>
+            <li><a href="#">アカウント情報</a></li>
+            <li><a href="added-feed.html">フィード一覧</a></li>
+          </ul>
+        </nav>
+      </div>
+    
 		</header>
 
 <div class="jumbotron text-center">  
@@ -196,7 +196,7 @@
           $.post("http://13.231.180.101:5000/sendtext/",
             { message: "https://news.yahoo.co.jp/pickup/rss.xml" },
             $('#button2').attr('value','追加済み'),
-            card1.style.background = 'grey'
+            card2.style.background = 'grey'
             );
         });
       });
@@ -206,7 +206,7 @@
           $.post("http://13.231.180.101:5000/sendtext/",
             { message: "https://news.yahoo.co.jp/pickup/rss.xml" },
             $('#button3').attr('value','追加済み'),
-            card1.style.background = 'grey'
+            card3.style.background = 'grey'
             );
         });
       });
@@ -216,7 +216,7 @@
           $.post("http://13.231.180.101:5000/sendtext/",
             { message: "https://news.yahoo.co.jp/pickup/rss.xml" },
             $('#button4').attr('value','追加済み'),
-            card1.style.background = 'grey'
+            card4.style.background = 'grey'
             );
         });
       });
@@ -226,7 +226,7 @@
           $.post("http://13.231.180.101:5000/sendtext/",
             { message: "https://news.yahoo.co.jp/pickup/rss.xml" },
             $('#button5').attr('value','追加済み'),
-            card1.style.background = 'grey'
+            card5.style.background = 'grey'
             );
         });
       });
@@ -236,7 +236,7 @@
           $.post("http://13.231.180.101:5000/sendtext/",
             { message: "https://news.yahoo.co.jp/pickup/rss.xml" },
             $('#button6').attr('value','追加済み'),
-            card1.style.background = 'grey'
+            card6.style.background = 'grey'
             );
         });
       });
@@ -246,7 +246,7 @@
           $.post("http://13.231.180.101:5000/sendtext/",
             { message: "https://news.yahoo.co.jp/pickup/rss.xml" },
             $('#button7').attr('value','追加済み'),
-            card1.style.background = 'grey'
+            card7.style.background = 'grey'
             );
         });
       });
@@ -257,17 +257,26 @@
           $.post("http://13.231.180.101:5000/sendtext/",
             { message: "https://news.yahoo.co.jp/pickup/rss.xml" },
             $('#button8').attr('value','追加済み'),
-            card1.style.background = 'grey'
+            card8.style.background = 'grey'
             );
         });
       });
 
+      // $(function(){
+      //   $('#button9').click(function(){
+      //     $.post("http://13.231.180.101:5000/sendtext/",
+      //       { message: "https://news.yahoo.co.jp/pickup/rss.xml" },
+      //       $('#button9').attr('value','追加済み'),
+      //       card9.style.background = 'grey'
+      //       );
+      //   });
+      // });
       $(function(){
         $('#button9').click(function(){
           $.post("http://13.231.180.101:5000/sendtext/",
             { message: "https://news.yahoo.co.jp/pickup/rss.xml" },
             $('#button9').attr('value','追加済み'),
-            card1.style.background = 'grey'
+            card9.style.background = 'grey'
             );
         });
       });
