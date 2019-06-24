@@ -32,12 +32,14 @@
 		});
 	</script>
 	<script>
-		$.getJSON('http://13.231.180.101:5000/feeds/', feeds =>  {
-			feeds.forEach(feed => {
-				$('#feed-list').append(`<div class="r"><div class="card c-3">
-					<div class="font"><p><li><a href="${feed.link}">${feed.title}</a></li></p></div></div></div>`);
-				});
+	<script>
+	$.getJSON('http://13.231.180.101:5000/feeds/', feeds =>  {
+		feeds.forEach(feed => {
+			$('#feed-list').append(`<div class="r"><div class="card c-3">
+				<div class="font"><p><li><a href="${feed.link}">${feed.title}</a></li></p></div></div></div>`);
 			});
+		});
+	</script>
 		</script>
 
 	</head>

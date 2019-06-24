@@ -1,9 +1,36 @@
+
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-</head>
-<body>
-
-</body>
+    <head>
+        <title>Ajax Example</title>
+    </head>
+    <body>
+        <h1>GitHub Repository List for JavaScript</h1>
+        <ul id="list" />
+        <script>
+            const list = document.getElementById("list");
+            const url = "https://api.github.com/search/repositories?q=javascript";
+            const xhr = new XMLHttpRequest();
+ 
+            xhr.open('GET', url);
+            xhr.responseType = "json";
+            xhr.send(null);
+            xhr.addEventListener("load", event => {
+                if (event.target.status === 200) {
+                    const res = xhr.response;
+                    let i = 0;
+                    setInterval(() => {
+                        let entry = res.items[i++];
+                        const element = document.createElement("li");
+                        element.appendChild(
+                            document.createTextNode(entry.id + ": " + 
+                                                    entry.full_name));
+                        list.appendChild(element);
+                    }, 3000);
+                } else {
+                    console.log("Error");
+                }
+            }); 
+        </script>
+    </body>
 </html>
