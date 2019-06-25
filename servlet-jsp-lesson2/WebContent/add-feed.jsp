@@ -186,7 +186,7 @@
       $(function(){
         $('#button1').click(function(){
           $.post("http://13.231.180.101:5000/sendtext/",
-            { message: "https://news.yahoo.co.jp/pickup/rss.xml" },
+            { user: "${account.userName}", ID: "朝日新聞", url: 'http://www3.asahi.com/rss/digital.rdf' },
             $('#button1').attr('value','追加済み'),
             alert("正常にフィードが追加されました"),
             $(this).prop("disabled",true),
