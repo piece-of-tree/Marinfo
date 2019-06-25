@@ -73,29 +73,15 @@ div.card {
 	    
 		let count = 0;
 		$.getJSON('http://13.231.180.101:5000/feeds/', feeds =>  {
-			<!--
-			feeds.forEach(feed => {
 
-				if (count % 3 ==0){
-					di = $('<div class="r">');
-					$('#feed-list').append(di);
-				}
-				
-				console.log("${feed.title}");
-				
-				di.append(`<div class="card c-3"><div class="font"><p><li><a href="${feed.link}">${feed.title}<br><br><p class="font2">${feed.date}</p></a></li></p></div></div></div>`)
-				count ++;
-				// $('#feed-list').append(`<div class="r"><div class="card c-3">
-				// 	<div class="font"><p><li><a href="${feed.link}">${feed.title}</a></li></p></div></div></div>`);
-			});
-			-->
 	        for(var i in feeds){
 	        	if (count % 3 ==0){
 					di = $('<div class="r">');
 					$('#feed-list').append(di);
 				}
-	        	console.log(feeds[i].link);
+	        	console.log(feeds[i].title);
 	        	di.append('<div class="card c-3"><div class="font"><p><li><a href="' + feeds[i].link + '">' + feeds[i].title + '<br><br><p class="font2">' + feeds[i].date + '</p></a></li></p></div></div></div>');
+	        	count++;
 	        }
 			
 		});
