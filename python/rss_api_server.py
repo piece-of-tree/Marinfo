@@ -103,6 +103,29 @@ def sendtext():
     return jsonify(res='ok')
 
 
+channels = []
+
+@app.route('/sendName_rss/', methods=['POST'])
+def sendName_rss():
+    
+    user = request.form['user']
+    channels = redis.hkeys(user)
+    print(channels)
+    return jsonify(res='ok')
+
+
+@app.route('/get_channels/', methods=['GET'])
+def get_channels():
+    # return jsonify(feeds_list), 200
+    #print(entries)
+    i = 0
+    for channel in channels:
+        channels[i] = channel[i].decode()
+        channels[i] = channel[i].replace("b", "")
+        channels[i] = channel[i].replace("'", "")
+        i = i + 1
+
+    return jsonify(channels), 200
 
 
 
