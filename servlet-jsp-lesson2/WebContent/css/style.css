@@ -244,12 +244,4 @@ article#main {
 			font-size: 85%;
 		}
 
-		div.card{
-			width: 80%;
-			height: 260px;
-			margin-bottom:50px;
-			border: solid 1px #ffffe0;
-			border-radius:5px;
-			background-color: #f5f5f5;
-			left: 170px;
-		}
+
