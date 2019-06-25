@@ -79,8 +79,8 @@ div.card {
 					di = $('<div class="r">');
 					$('#feed-list').append(di);
 				}
-	        	console.log(feeds[i].title);
-	        	di.append('<div class="card c-3"><div class="font"><p><li><a href="' + feeds[i].link + '">' + feeds[i].title + '<br><br><p class="font2">' + feeds[i].date + '</p></a></li></p></div></div></div>');
+	        	//console.log(feeds[i].channel);
+	        	di.append('<div class="card c-3"><div class="font"><p><li><a href="' + feeds[i].link + '">' + feeds[i].title + '<br><br><p class="font2">' + feeds[i].date + '</p></a></li></p>' + feeds[i].channel + '</div></div></div>');
 	        	count++;
 	        }
 			
