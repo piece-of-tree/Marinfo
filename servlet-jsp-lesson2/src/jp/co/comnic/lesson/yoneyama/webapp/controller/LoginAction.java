@@ -19,7 +19,7 @@ public class LoginAction implements Action {
 
 		String userName = request.getParameter("userName");
 		String password = request.getParameter("password");
-		String forwardPath = "login";
+		String forwardPath = "sign-in.html";
 
 		Account account;
 		try {
@@ -29,7 +29,7 @@ public class LoginAction implements Action {
 
 				HttpSession session = request.getSession();
 				session.setAttribute("account", account);
-				forwardPath = "top";
+				forwardPath = "top.html";
 
 				return new Redirector(request, response, forwardPath);
 

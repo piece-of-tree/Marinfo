@@ -1,3 +1,7 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://sargue.net/jsptags/time" prefix="javatime"%>
+
+
 <!DOCTYPE html>
 
 <html lang="ja">
@@ -71,10 +75,10 @@
 				</button>
 				<nav id="menu">
 					<ul>
-						<li><a href="#">ログイン</a></li>
-						<li><a href="#">フィード一覧</a></li>
-						<li><a href="#">フィード追加</a></li>
-						<input type="button" id="btn1" value="ボタン">
+						<li><a href="#">ã­ã°ã¤ã³</a></li>
+						<li><a href="#">ãã£ã¼ãä¸è¦§</a></li>
+						<li><a href="#">ãã£ã¼ãè¿½å </a></li>
+						<input type="button" id="btn1" value="ãã¿ã³">
 					</ul>
 				</nav>
 			</div>
