@@ -9,6 +9,18 @@
 		@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Kosugi+Maru&display=swap');
 	</style>
 
+	<style>
+			div.card{
+		width: 80%;
+		height: 260px;
+		margin-bottom:50px;
+		border: solid 1px #ffffe0;
+		border-radius:5px;
+		background-color: #f5f5f5;
+		left: 200px;
+	}
+	</style>
+
 	<title>HTML5 Layout sample</title>
 
 	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css">
@@ -31,7 +43,7 @@
 
 	<script>
 		$(function){
-			$.post("http://13.231.180.101:5000/snedName/",
+			$.post("http://13.231.180.101:5000/sendName/",
 				{ message:${account.userName});
 
 		}
@@ -89,8 +101,8 @@
 			<div id="menu">
 				<ul>
 					<li><a href="#">アカウント情報</a></li>
-					<li><a href="added-feed.html">フィード一覧</a></li>
 					<li><a href="add-feed.html">フィード追加</a></li>
+					<li><a href="added-feed.html">登録済みフィード</a></li>
 				</ul>
 			</div>
 		</div>
