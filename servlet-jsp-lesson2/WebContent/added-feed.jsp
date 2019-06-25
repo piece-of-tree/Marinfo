@@ -24,7 +24,7 @@
 
 			async function f() {
 				$.post("http://13.231.180.101:5000/sendName_rss/",
-						{ message: "${account.userName}" });
+						{ user: "${account.userName}" });
 				return "post";
 			}
 
@@ -42,15 +42,15 @@
 	    while (new Date() - startMsec < 4000);
 	    
 		let count = 0;
-		$.getJSON('http://13.231.180.101:5000/feeds/', feeds =>  {
+		$.getJSON('http://13.231.180.101:5000/get_channels/', data =>  {
 
-	        for(var i in feeds){
+	        for(var i in data){
 	        	if (count % 3 ==0){
 					di = $('<div class="r">');
 					$('#feed-list').append(di);
 				}
-	        	console.log(feeds[i].title);
-	        	di.append('<div class="card c-3"><div class="font"><p><li><a href="' + feeds[i].link + '">' + feeds[i].title + '<br><br><p class="font2">' + feeds[i].date + '</p></a></li></p></div></div></div>');
+	        	console.log(data[i]);
+	        	di.append('<div class="card c-3"><div class="font"><p><li>' + data[i].rss + '<br><br><p class="font2"></p></a></li></p></div></div></div>');
 	        	count++;
 	        }
 			

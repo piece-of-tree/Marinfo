@@ -192,13 +192,13 @@
             $(this).prop("disabled",true),
              card1.style.background = 'grey',
             );
-        });s
+        });
       });
 
       $(function(){
         $('#button2').click(function(){
           $.post("http://13.231.180.101:5000/sendtext/",
-            { message: "https://news.yahoo.co.jp/pickup/rss.xml" },
+            { user: "${account.userName}", ID: "毎日新聞", url: 'https://mainichi.jp/rss/etc/mainichi-flash.rss'},
             $('#button2').attr('value','追加済み'),
              alert("正常にフィードが追加されました"),
             $(this).prop("disabled",true),
@@ -210,7 +210,7 @@
       $(function(){
         $('#button3').click(function(){
           $.post("http://13.231.180.101:5000/sendtext/",
-            { message: "https://news.yahoo.co.jp/pickup/rss.xml" },
+            { user: "${account.userName}", ID: "日経新聞", url: 'https://assets.wor.jp/rss/rdf/nikkei/news.rdf'},
             $('#button3').attr('value','追加済み'),
              alert("正常にフィードが追加されました"),
             $(this).prop("disabled",true),
@@ -222,7 +222,7 @@
       $(function(){
         $('#button4').click(function(){
           $.post("http://13.231.180.101:5000/sendtext/",
-            { message: "https://news.yahoo.co.jp/pickup/rss.xml" },
+            { user: "${account.userName}", ID: "読売新聞", url: 'https://assets.wor.jp/rss/rdf/yomiuri/latestnews.rdf' },
             $('#button4').attr('value','追加済み'),
              alert("正常にフィードが追加されました"),
             $(this).prop("disabled",true),
@@ -234,7 +234,7 @@
       $(function(){
         $('#button5').click(function(){
           $.post("http://13.231.180.101:5000/sendtext/",
-            { message: "https://news.yahoo.co.jp/pickup/rss.xml" },
+            { user: "${account.userName}", ID: "産経新聞", url: 'https://assets.wor.jp/rss/rdf/sankei/affairs.rdf' },
             $('#button5').attr('value','追加済み'),
              alert("正常にフィードが追加されました"),
             $(this).prop("disabled",true),
@@ -246,7 +246,7 @@
       $(function(){
         $('#button6').click(function(){
           $.post("http://13.231.180.101:5000/sendtext/",
-            { message: "https://news.yahoo.co.jp/pickup/rss.xml" },
+            { user: "${account.userName}", ID: "日テレ News", url: 'http://www.news24.jp/rss/index.rdf' },
             $('#button6').attr('value','追加済み'),
              alert("正常にフィードが追加されました"),
             $(this).prop("disabled",true),
@@ -258,7 +258,7 @@
       $(function(){
         $('#button7').click(function(){
           $.post("http://13.231.180.101:5000/sendtext/",
-            { message: "https://news.yahoo.co.jp/pickup/rss.xml" },
+            { user: "${account.userName}", ID: "NHK News", url: 'https://www3.nhk.or.jp/rss/news/cat0.xml' },
             $('#button7').attr('value','追加済み'),
              alert("正常にフィードが追加されました"),
             $(this).prop("disabled",true),
@@ -271,7 +271,7 @@
       $(function(){
         $('#button8').click(function(){
           $.post("http://13.231.180.101:5000/sendtext/",
-            { message: "https://news.yahoo.co.jp/pickup/rss.xml" },
+            { user: "${account.userName}", ID: "MSN News", url: 'https://rss.msn.com/ja-jp/' },
             $('#button8').attr('value','追加済み'),
              alert("正常にフィードが追加されました"),
             $(this).prop("disabled",true),
@@ -283,7 +283,7 @@
       $(function(){
         $('#button9').click(function(){
           $.post("http://13.231.180.101:5000/sendtext/",
-            { message: "https://news.yahoo.co.jp/pickup/rss.xml" },
+            { user: "${account.userName}", ID: "Yahoo News", url: 'https://news.yahoo.co.jp/pickup/rss.xml' },
             $('#button9').attr('value','追加済み'),
              alert("正常にフィードが追加されました"),
             $(this).prop("disabled",true),
