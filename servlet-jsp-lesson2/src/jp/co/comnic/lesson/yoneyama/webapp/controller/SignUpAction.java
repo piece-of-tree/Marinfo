@@ -22,7 +22,7 @@ public class SignUpAction implements Action {
 		
 		if (!password1.equals(password2)) {
 			request.setAttribute("error", "Password doesn't much.");
-			return new Forwarder(request, response, "sign-up");
+			return new Forwarder(request, response, "sign-up.html");
 		}
 		
 		try {
@@ -30,7 +30,7 @@ public class SignUpAction implements Action {
 			Account account = AccountDao.findBy(userName);
 			if (account.getUserName() != null) {
 				request.setAttribute("error", "User already exists.");
-				return new Forwarder(request, response, "sign-up");
+				return new Forwarder(request, response, "sign-up.html");
 			}
 			
 			account = new Account(userName, password1);
@@ -40,7 +40,7 @@ public class SignUpAction implements Action {
 			throw new ServletException(e);
 		}
 		
-		return new Redirector(request, response, "login");
+		return new Redirector(request, response, "sign-in.html");
 	}
 
 }
