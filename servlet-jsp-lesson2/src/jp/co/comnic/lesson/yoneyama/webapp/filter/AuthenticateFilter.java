@@ -14,7 +14,7 @@ import javax.servlet.http.HttpSession;
 
 import jp.co.comnic.lesson.yoneyama.webapp.beans.Account;
 
-@WebFilter("/*")
+//@WebFilter("/*")
 public class AuthenticateFilter implements Filter {
 
 	@Override
