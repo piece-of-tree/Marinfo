@@ -1,6 +1,9 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://sargue.net/jsptags/time" prefix="javatime"%>
+
 <!DOCTYPE html>
 
-<html lang="ja">
+<html lang="en">
 
 <head>
 	<meta charset="utf-8">
@@ -42,23 +45,10 @@
 	<script src="js/handle-scroll-event.js"></script>
 
 	<script>
-		$(function){
 			$.post("http://13.231.180.101:5000/sendName/",
-				{ message:${account.userName});
-
-		}
-
+				{ message: "${account.userName}" });
 	</script>
-
-	<script>
-		$(() => {
-			$("#menubtn").on('click', () => {
-				$("#menu").slideToggle();
-			});
-		});
-	</script>
-
-
+	
 	<script>
 
 		let count = 0;
@@ -77,6 +67,17 @@
 			});
 		});
 	</script>
+
+	<script>
+		$(() => {
+			$("#menubtn").on('click', () => {
+				$("#menu").slideToggle();
+			});
+		});
+	</script>
+
+
+
 
 
 </head>
