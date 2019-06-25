@@ -127,7 +127,7 @@ div.card {
 			<div id="menu">
 				<ul>
 					<li><a href="#">アカウント情報</a></li>
-					<li><a href="add-feed.html">フィード追加</a></li>
+					<li><a href="add-feed.jsp">フィード追加</a></li>
 					<li><a href="added-feed.jsp">登録済みフィード</a></li>
 				</ul>
 			</div>

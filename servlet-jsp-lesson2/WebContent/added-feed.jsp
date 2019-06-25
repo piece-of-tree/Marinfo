@@ -54,9 +54,9 @@
 				</button>
 				<nav id="menu">
 					<ul>
-						<li><a href="top.html">トップ</a><li>
+						<li><a href="top.jsp">トップ</a><li>
 						<li><a href="#">アカウント情報</a></li>
-						<li><a href="add-feed.html">フィード追加</a></li>
+						<li><a href="add-feed.jsp">フィード追加</a></li>
 					</ul>
 				</nav>
 			</div>
