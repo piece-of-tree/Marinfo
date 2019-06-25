@@ -44,13 +44,27 @@
 
 	<script src="js/handle-scroll-event.js"></script>
 
-	<script>
-			$.post("http://13.231.180.101:5000/sendName/",
-				{ message: "${account.userName}" });
+	<script>			
+
+			async function f() {
+				$.post("http://13.231.180.101:5000/sendName/",
+						{ message: "${account.userName}" });
+				return "post";
+			}
+
 	</script>
 	
 	<script>
+	
 
+	async function doF() {
+	    console.log(await f());
+	    
+
+	    // simulate asynchronous processing ...
+	    const startMsec = new Date();
+	    while (new Date() - startMsec < 4000);
+	    
 		let count = 0;
 		$.getJSON('http://13.231.180.101:5000/feeds/', feeds =>  {
 			feeds.forEach(feed => {
@@ -59,6 +73,8 @@
 					di = $('<div class="r">');
 					$('#feed-list').append(di);
 				}
+				
+				console.log(${feed.title});
 
 				di.append(`<div class="card c-3"><div class="font"><p><li><a href="${feed.link}">${feed.title}<br><br><p class="font2">${feed.date}</p></a></li></p></div></div></div>`)
 				count ++;
@@ -66,6 +82,12 @@
 				// 	<div class="font"><p><li><a href="${feed.link}">${feed.title}</a></li></p></div></div></div>`);
 			});
 		});
+	    
+	}
+
+	doF();
+		
+		
 	</script>
 
 	<script>
@@ -92,6 +114,7 @@
 						width="120" height="50">
 					</a>
 				</h1>
+				<h2>Welcome ${account.userName}</h2>
 			</section>
 		</div>
 
