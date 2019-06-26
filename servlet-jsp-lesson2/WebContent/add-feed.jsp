@@ -21,10 +21,18 @@
 		</script> -->
 <meta charset="utf-8">
 <style>
-figure {
+   header{
+   background-color: white;
+   }
+	body {
+        background-image: url("background.png");
+        
+        
+	} 
+	figure {
 	border-width: 5px;
-}
-</style>
+	}
+</style> 
 </head>
 
 <body>
@@ -76,9 +84,10 @@ figure {
 		</div>
 	</header>
 
-	<div class="jumbotron text-center">
-<h2>Welcome ${account.userName}</h2>
-		<h1>フィード追加</h1>
+	<div class="text-center">
+	<br>
+	<h2 style="color:white;">Welcome ${account.userName}</h2>
+		<h1 style="color:white;">フィード追加</h1>
 
 
 		
@@ -86,8 +95,9 @@ figure {
 			<input class="input" type="text" name="URL_text" placeholder="Input URL">
 			<button" id="rss_button" class="btn btn-primary">追加</button>
 		</form>
-
+	<br>
 	</div>
+<p>&nbsp</p>
 
 	<div class="container">
 		<div class="row">
