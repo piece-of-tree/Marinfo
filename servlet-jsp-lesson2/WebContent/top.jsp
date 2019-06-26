@@ -32,11 +32,11 @@ div.card {
 <link rel="stylesheet"
 	href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css">
 
-<link rel="stylesheet" href="css\web-grid.css">
+<link rel="stylesheet" href="css/web-grid.css">
 
-<link rel="stylesheet" href="css\style.css">
+<link rel="stylesheet" href="css/style.css">
 
-<link rel="stylesheet" herf="css\cardstyle.css">
+<link rel="stylesheet" herf="css/cardstyle.css">
 
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">

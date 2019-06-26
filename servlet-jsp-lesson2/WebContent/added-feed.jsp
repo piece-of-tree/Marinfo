@@ -31,6 +31,26 @@
 </script>
 
 <script>
+$(function(){
+    $('#button1').click(function(e){
+      $.post("http://13.231.180.101:5000/delete/",
+        { user: "${account.userName}", ID: e., url: 'http://www3.asahi.com/rss/digital.rdf' },
+        $('#button1').attr('value','追加済み'),
+        alert("正常にフィードが追加されました"),
+        $(this).prop("disabled",true),
+         card1.style.background = 'grey',
+        );
+    });
+  });
+  
+$(() => {
+	$('.mybtn').click(e => {
+		console.log($(e.target).text());
+	});
+});
+</script>
+
+<script>
 	
 	async function doF() {
 	    console.log(await f());
@@ -43,11 +63,11 @@
 			let count = 0;
 			$.getJSON('http://13.231.180.101:5000/get_channels/', data =>  {
 
-	        for(var i in data){
+	        for(let i in data){
 	        	const $div = $('<div class="alert alert-info"><div class="font">')
 	        	const $li = $('<li>')
 	        	const $name = $('<span>'+ data[i].rss +'</span>');
-	        	const $remove = $('<button onclick = di.remove() class="btn btn-primary">削除</button><br></br>');
+	        	const $remove = $('<button id="delete' + i + '" class="btn btn-primary">削除</button><br></br>');
 	        
 	 
 	        	
