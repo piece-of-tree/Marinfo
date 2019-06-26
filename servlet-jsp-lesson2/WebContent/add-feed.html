@@ -285,16 +285,17 @@
             );
         });
       }); 
+
+
+      const config = {
+  host:'13.231.180.101',
+  port: 6379
+  }
+  const redis = require('redis');
+  const client = redis.createClient(config);
      </script>
-     const config = {
-	host:'13.231.180.101',
-	port: 6379
-	}
-	var redis = require("redis"),
-	client = redis.createClient(config);
-    <script>
-    
-    </script>
+     
+  
 <!-- <script>
   const button1 = document.getElementById('button1')
   const button2 = document.getElementById('button2')
