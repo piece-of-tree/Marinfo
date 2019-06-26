@@ -22,7 +22,7 @@ div.card {
 	margin-bottom: 50px;
 	border: solid 1px #ffffe0;
 	border-radius: 5px;
-	background-color: #f5f5f5;
+	background-color: #ff8989;
 	left: 200px;
 }
 </style>

@@ -6,7 +6,6 @@
 <html>
 <head>
 <title>追加Feed</title>
-<h2>Welcome ${account.userName}</h2>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
@@ -47,7 +46,6 @@ figure {
             $('#rss_button').attr('value','追加済み'),
             alert("正常にフィードが追加されました"),
             $(this).prop("disabled",true),
-             card1.style.background = 'grey',
             );
         });
       });	
@@ -79,14 +77,14 @@ figure {
 	</header>
 
 	<div class="jumbotron text-center">
-
+<h2>Welcome ${account.userName}</h2>
 		<h1>フィード追加</h1>
 
 
 		
 		<form name="URL">
 			<input class="input" type="text" name="URL_text" placeholder="Input URL">
-			<input type="button" id="rss_button" class="btn btn-primary" value="追加" />
+			<button" id="rss_button" class="btn btn-primary">追加</button>
 		</form>
 
 	</div>
@@ -237,7 +235,7 @@ figure {
             $('#button1').attr('value','追加済み'),
             alert("正常にフィードが追加されました"),
             $(this).prop("disabled",true),
-             card1.style.background = 'grey',
+             card1.style.background = '#93ff93',
             );
         });
       });
@@ -249,7 +247,7 @@ figure {
             $('#button2').attr('value','追加済み'),
              alert("正常にフィードが追加されました"),
             $(this).prop("disabled",true),
-            card2.style.background = 'grey'
+            card2.style.background = '#93ff93'
             );
         });
       });
@@ -261,7 +259,7 @@ figure {
             $('#button3').attr('value','追加済み'),
              alert("正常にフィードが追加されました"),
             $(this).prop("disabled",true),
-            card3.style.background = 'grey'
+            card3.style.background = '#93ff93'
             );
         });
       });
@@ -273,7 +271,7 @@ figure {
             $('#button4').attr('value','追加済み'),
              alert("正常にフィードが追加されました"),
             $(this).prop("disabled",true),
-            card4.style.background = 'grey'
+            card4.style.background = '#93ff93'
             );
         });
       });
@@ -285,7 +283,7 @@ figure {
             $('#button5').attr('value','追加済み'),
              alert("正常にフィードが追加されました"),
             $(this).prop("disabled",true),
-            card5.style.background = 'grey'
+            card5.style.background = '#93ff93'
             );
         });
       });
@@ -297,7 +295,7 @@ figure {
             $('#button6').attr('value','追加済み'),
              alert("正常にフィードが追加されました"),
             $(this).prop("disabled",true),
-            card6.style.background = 'grey'
+            card6.style.background = '#93ff93'
             );
         });
       });
@@ -309,7 +307,7 @@ figure {
             $('#button7').attr('value','追加済み'),
              alert("正常にフィードが追加されました"),
             $(this).prop("disabled",true),
-            card7.style.background = 'grey'
+            card7.style.background = '#93ff93'
             );
         });
       });
@@ -322,7 +320,7 @@ figure {
             $('#button8').attr('value','追加済み'),
              alert("正常にフィードが追加されました"),
             $(this).prop("disabled",true),
-            card8.style.background = 'grey'
+            card8.style.background = '#93ff93'
             );
         });
       });
@@ -334,7 +332,7 @@ figure {
             $('#button9').attr('value','追加済み'),
              alert("正常にフィードが追加されました"),
             $(this).prop("disabled",true),
-            card9.style.background = 'grey'
+            card9.style.background = '#93ff93'
             );
         });
       });
@@ -353,7 +351,7 @@ figure {
   const button9 = document.getElementById('button9')
   button1.onclick = function(){
     button1.value = '追加済み';
-    card1.style.background = 'grey';
+    card1.style.background = '#93ff93';
     
   };
     
@@ -372,7 +370,7 @@ figure {
   };
    button6.onclick = function(){
     button6.value = '追加済み';
-    card6.style.background = 'grey';
+    card6.style.background = '#93ff93';
   };
    button7.onclick = function(){
     button7.value = '追加済み';
