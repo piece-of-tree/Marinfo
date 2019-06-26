@@ -44,7 +44,7 @@
 			$.getJSON('http://13.231.180.101:5000/get_channels/', data =>  {
 
 	        for(var i in data){
-	        	const $div = $('<div class="alert alert-info""><div class="font">')
+	        	const $div = $('<div class="alert alert-info"><div class="font">')
 	        	const $li = $('<li>')
 	        	const $name = $('<span>'+ data[i].rss +'</span>');
 	        	const $remove = $('<button onclick = di.remove() class="btn btn-primary">削除</button><br></br>');
