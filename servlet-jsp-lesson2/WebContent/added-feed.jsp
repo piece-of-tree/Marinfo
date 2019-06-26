@@ -32,7 +32,6 @@
 
 <script>
 	
-
 	async function doF() {
 	    console.log(await f());
 	    
@@ -41,17 +40,31 @@
 	    const startMsec = new Date();
 	    while (new Date() - startMsec < 4000);
 	    
-		let count = 0;
-		$.getJSON('http://13.231.180.101:5000/get_channels/', data =>  {
+			let count = 0;
+			$.getJSON('http://13.231.180.101:5000/get_channels/', data =>  {
 
 	        for(var i in data){
+	        	const $div = $('<div class="alert alert-info""><div class="font">')
+	        	const $li = $('<li>')
+	        	const $name = $('<span>'+ data[i].rss +'</span>');
+	        	const $remove = $('<button onclick = di.remove() class="btn btn-primary">削除</button><br></br>');
+	        
+	 
+	        	
 	        	if (count % 3 ==0){
 					di = $('<div class="r">');
-					$('#feed-list').append(di);
+					$('#feed-list').append(di);					
 				}
-	        	console.log(data[i]);
-	        	di.append('<div class="card c-3"><div class="font"><p><li>' + data[i].rss + '<br><br><p class="font2"></p></a></li></p></div></div></div>');
-	        	count++;
+	        	console.log(data[i]);	        	
+	        	di.append($div)
+	        	  .append($li)
+	        	  .append($name)
+	        	  .append($remove)
+	            count++;
+	        	
+	        	//console.log(data[i]);
+	        	//di.append('<div class="card c-3"><div class="font"><p><li>' + data[i].rss + '<br><br><p class="font2"></p></a></li></p></div></div></div>');
+	        	//count++;
 	        }
 			
 		});
@@ -117,7 +130,8 @@ figure {
 	<div class="jumbotron text-center">
 		<h1>登録済みフィード一覧</h1>
 		<h2>Welcome ${account.userName}</h2>
-
+	</div>
+	<div class="text-center">
 		<div id="pane">
 			<p id="feed-list"></p>
 		</div>

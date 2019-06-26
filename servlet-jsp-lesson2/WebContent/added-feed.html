@@ -59,35 +59,68 @@
 			</div>
 	</header>
 <div class="jumbotron text-center">
-<<<<<<< HEAD:servlet-jsp-lesson2/WebContent/added-feed.html
-  <h1>登録済みフィード</h1>
-=======
   <h1>登録済みフィード一覧</h1>
+
   <h2>Welcome ${account.userName}</h2>
   <script>
 >>>>>>> d8de02b58269e159f109eca1eccc7fdd9fca6e39:servlet-jsp-lesson2/WebContent/added-feed.html
-		<ul class="list"/>
 
-</div>
-<form action="mainichi.do" method="post">
-				<div class="row">
-					<div class="input-field col s6">
-	                   	<input id="title" name="title" type="text" class="validate">
-	                    <label for="title">TITLE</label>
-		            </div>
-		            <div class="input-field col s6">
-			            <input type="submit" value="Find" 
-		            	       class="btn waves-effect #d7ccc8 brown lighten-4">
-	            	</div>
-	            </div>
-			</form>
-<form action="asahi.do" method="post">
+console.log(data[i]);
+const $div = $('<div class="alert alert-info""><div class="font">')
+const $li = $('<li>')
+const $name = $('<br></br><span>'+ data[i].rss +'</span>');
+const $remove = $('<button class="remove">削除</button><br></br>');
 
-</form>
+$remove.on('click',function(){
+		});
+	
+}	
+di.append($div)
+  .append($li)
+  .append($name)
+  .append($remove)
+   count++;
 
-<form action="nikkei.do" method="post">
+	async function doF() {
+	    console.log(await f());
+	    
 
-</form>
+	    // simulate asynchronous processing ...
+	    const startMsec = new Date();
+	    while (new Date() - startMsec < 4000);
+	    
+			let count = 0;
+			$.getJSON('http://13.231.180.101:5000/get_channels/', data =>  {
+
+	        for(var i in data){
+	        	if (count % 3 ==0){
+					di = $('<div class="r">');
+					$('#feed-list').append(di);
+					
+				}
+	        	
+	        	console.log(data[i]);
+	        	const $div = $('<div class="alert alert-info""><div class="font">')
+	        	const $li = $('<li>')
+	        	const $name = $('<br></br><span>'+ data[i].rss +'</span>');
+	        	const $remove = $('<button class="remove">削除</button><br></br>');
+	        	di.append($div)
+	        	  .append($li)
+	        	  .append($name)
+	        	  .append($remove)
+	        	   count++;
+	        	$remove.on('click',function(){
+	        		di.remove();
+	    		});
+	        	
+	        }
+			
+			});
+	    
+	}
+
+	doF();
+		
 
 			
 

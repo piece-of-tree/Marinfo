@@ -274,7 +274,6 @@
             );
         });
       });
-
       $(function(){
         $('#button9').click(function(){
           $.post("http://13.231.180.101:5000/sendtext/",
@@ -285,9 +284,16 @@
             card9.style.background = 'grey'
             );
         });
-      });
-
-      
+      }); 
+     </script>
+     const config = {
+	host:'13.231.180.101',
+	port: 6379
+	}
+	var redis = require("redis"),
+	client = redis.createClient(config);
+    <script>
+    
     </script>
 <!-- <script>
   const button1 = document.getElementById('button1')
