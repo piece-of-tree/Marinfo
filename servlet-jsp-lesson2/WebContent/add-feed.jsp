@@ -46,7 +46,6 @@ figure {
             $('#rss_button').attr('value','追加済み'),
             alert("正常にフィードが追加されました"),
             $(this).prop("disabled",true),
-             card1.style.background = '#93ff93',
             );
         });
       });	
@@ -85,7 +84,7 @@ figure {
 		
 		<form name="URL">
 			<input class="input" type="text" name="URL_text" placeholder="Input URL">
-			<input type="button" id="rss_button" class="btn btn-primary" value="追加" />
+			<button" id="rss_button" class="btn btn-primary">追加</button>
 		</form>
 
 	</div>
