@@ -19,6 +19,7 @@ public class LoginAction implements Action {
 
 		String userName = request.getParameter("userName");
 		String password = request.getParameter("password");
+		//String forwardPath = "sign-in.jsp";
 		String forwardPath = "sign-in.html";
 
 		Account account;

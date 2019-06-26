@@ -78,7 +78,7 @@
 				<ul>
 					<li><a href="top.jsp">トップ</a>
 					<li><a href="#">アカウント情報</a></li>
-					<li><a href="added-feed.jsp">登録済みフィード</a></li>
+					<li><a href="added-feed_kataoka.jsp">登録済みフィード</a></li>
 				</ul>
 			</nav>
 		</div>

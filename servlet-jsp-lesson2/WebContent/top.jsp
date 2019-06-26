@@ -128,7 +128,7 @@ div.card {
 				<ul>
 					<li><a href="#">アカウント情報</a></li>
 					<li><a href="add-feed.jsp">フィード追加</a></li>
-					<li><a href="added-feed.jsp">登録済みフィード</a></li>
+					<li><a href="added-feed_kataoka.jsp">登録済みフィード</a></li>
 				</ul>
 			</div>
 		</div>

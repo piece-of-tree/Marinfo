@@ -31,6 +31,14 @@
 </script>
 
 <script>
+		$(() => {
+			$('.mybtn').click(e => {
+				console.log($(e.target).text());
+			});
+		});
+</script>
+
+<script>
 	
 
 	async function doF() {
@@ -50,7 +58,7 @@
 					$('#feed-list').append(di);
 				}
 	        	console.log(data[i]);
-	        	di.append('<div class="card c-3"><div class="font"><p><li>' + data[i].rss + '<br><br><p class="font2"></p></a></li></p></div></div></div>');
+	        	di.append('<div class="card c-3"><div class="font"><p><li class = "delete">' + data[i].rss + '<br><br><p class="font2"></p></a></li></p></div></div></div>');
 	        	count++;
 	        }
 			
