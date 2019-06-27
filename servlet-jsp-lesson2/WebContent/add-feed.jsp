@@ -208,21 +208,6 @@
 				</div>
 			</div>
 
-
-			<div class="col-md-4">
-				<div class="card" id="card8" style="width: 11em;">
-					<a href=""><img src="img/msn.jpg" class="card-img-top"></a>
-					<div class="card-body">
-						<h5 class="card-title">
-							<strong>MSN News</strong>
-						</h5>
-						<input type="button" id="button8" class="btn btn-primary"
-							value="追加" />
-					</div>
-				</div>
-			</div>
-
-
 			<div class="col-md-4">
 				<div class="card" id="card9" style="width: 11em;">
 					<a href=""><img src="img/yahoo.jpg" class="card-img-top"></a>
@@ -318,19 +303,6 @@
              alert("正常にフィードが追加されました"),
             $(this).prop("disabled",true),
             card7.style.background = '#93ff93'
-            );
-        });
-      });
-
-
-      $(function(){
-        $('#button8').click(function(){
-          $.post("http://13.231.180.101:5000/sendtext/",
-            { user: "${account.userName}", ID: "MSN News", url: 'https://rss.msn.com/ja-jp/' },
-            $('#button8').attr('value','追加済み'),
-             alert("正常にフィードが追加されました"),
-            $(this).prop("disabled",true),
-            card8.style.background = '#93ff93'
             );
         });
       });

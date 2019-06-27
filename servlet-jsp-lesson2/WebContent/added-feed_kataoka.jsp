@@ -8,17 +8,25 @@
 <title>added-feed</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script
-	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
-<link rel="stylesheet"
-	href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css">
-<link rel="stylesheet" href="css\style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+<script	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+<script	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css">
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet" href="css/web-grid.css">
+
+<link rel="stylesheet" href="css/cardstyle.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+
+
+
+<script	src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 <script>			
 
@@ -60,6 +68,20 @@
 	        	console.log(data[i]);
 	        	di.append('<div class="card c-3"><div class="font"><p><li class = "delete">' + data[i].rss + '<br><br><p class="font2"></p></a></li></p></div></div></div>');
 	        	count++;
+	        }
+	        
+	        for(var i in data){
+	        	if (count % 3 ==0){
+					di = $('<div class="r">');
+					$('#feed-list').append(di);
+				}
+	        	//console.log(feeds[i].channel);
+	        	di.append('<div class="card c-3"><div class="font"><p><li>' + feeds[i].title + '<br><br><span class="font2">' + feeds[i].date + '</span></li></p></div></div>');
+	        	count++;
+	        	if (count % 3 ==0){
+					di.append('</div>');
+				}
+	        	
 	        }
 			
 		});
@@ -112,14 +134,13 @@ figure {
 			<button type="button" id="menubtn">
 				<i class="fa fa-bars"></i>
 			</button>
-			<nav id="menu">
+			<div id="menu">
 				<ul>
 					<li><a href="top.jsp">トップ</a>
-					<li>
 					<li><a href="#">アカウント情報</a></li>
 					<li><a href="add-feed.jsp">フィード追加</a></li>
 				</ul>
-			</nav>
+			</div>
 		</div>
 	</header>
 	<div class="jumbotron text-center">
@@ -127,7 +148,8 @@ figure {
 		<h2>Welcome ${account.userName}</h2>
 
 		<div id="pane">
-			<p id="feed-list"></p>
+			<section id="feed-list">
+			</section>
 		</div>
 	</div>
 

@@ -29,8 +29,7 @@ div.card {
 
 <title>HTML5 Layout sample</title>
 
-<link rel="stylesheet"
-	href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css">
 
 <link rel="stylesheet" href="css/web-grid.css">
 
@@ -38,15 +37,15 @@ div.card {
 
 <link rel="stylesheet" herf="css/cardstyle.css">
 
-<link rel="stylesheet"
-	href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	
+<script	src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 
 <!-- <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script> -->
 <script src="js/jquery-3.4.1.min.js"></script>
 
-<script
-	src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
 
 <script src="js/handle-scroll-event.js"></script>
 
@@ -80,8 +79,12 @@ div.card {
 					$('#feed-list').append(di);
 				}
 	        	//console.log(feeds[i].channel);
-	        	di.append('<div class="card c-3"><div class="font"><p><li><a href="' + feeds[i].link + '">' + feeds[i].title + '<br><br><p class="font2">' + feeds[i].date + '</p></a></li></p>' + feeds[i].channel + '</div></div></div>');
+	        	di.append('<div class="card c-3"><div class="font"><p><li><a href="' + feeds[i].link + '">' + feeds[i].title + '<br><br><span class="font2">' + feeds[i].date + '</span></a></li></p><span>' + feeds[i].channel + '</span></div></div>');
 	        	count++;
+	        	if (count % 3 ==0){
+					di.append('</div>');
+				}
+	        	
 	        }
 			
 		});
@@ -137,7 +140,8 @@ div.card {
 	<!-- <ul id="feed-list"></ul> -->
 
 	<div id="pane">
-		<p id="feed-list"></p>
+		<section id="feed-list">
+		</section>
 	</div>
 
 	<div id="endinfo">これ以上記事はありません</div>
