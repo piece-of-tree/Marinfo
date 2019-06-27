@@ -16,15 +16,7 @@
 </style>
 
 <style>
-div.card {
-	width: 80%;
-	height: 260px;
-	margin-bottom: 50px;
-	border: solid 1px #ffffe0;
-	border-radius: 5px;
-	background-color: #ff8989;
-	left: 200px;
-}
+
  body {
         background-image: url("background6.jpg");
         background-attachment: fixed;
@@ -51,7 +43,7 @@ div.card {
 
 <link rel="stylesheet" href="css/style.css">
 
-<link rel="stylesheet" herf="css/cardstyle.css">
+<link rel="stylesheet" href="css/cardstyle.css">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	
@@ -95,7 +87,7 @@ div.card {
 					$('#feed-list').append(di);
 				}
 	        	//console.log(feeds[i].channel);
-	        	di.append('<div class="card c-3"><div class="font"><span><li><a href="' + feeds[i].link + '">' + feeds[i].title + '<br><br><span class="font2">' + feeds[i].date + '</span></a></li></span><span>' + feeds[i].channel + '</span></div></div>');
+	        	di.append('<div class="card c-3"><div class="font"><span><li><a href="' + feeds[i].link + '">' + feeds[i].title + '<br><br><span class="font2">' + feeds[i].date + '</span></a></li></span><span ="channel">' + feeds[i].channel + '</span></div></div>');
 	        	count++;
 	        	if (count % 3 ==0){
 					di.append('</div>');

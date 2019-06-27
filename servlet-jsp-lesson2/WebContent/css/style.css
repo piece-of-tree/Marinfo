@@ -98,7 +98,7 @@ article#main {
 		display: block;
 		padding: 5px;
 		color: #000000;
-		font-size: 100px;
+		font-size: 14px;
 		text-decoration: none;
 	}
 
@@ -131,8 +131,7 @@ article#main {
 		display: block;
 		padding: 10px 15px;
 		color: #000000;
-		/*font-size: 14px;*/
-		font-weight: bold;
+		font-size: 14px;
 		text-decoration: none;
 	}
 
@@ -240,6 +239,7 @@ article#main {
 		#endinfo{
 			text-align: center;
 			font-size: 400%;
+			color: white;
 		}
 
 		p.font2{
@@ -247,4 +247,12 @@ article#main {
 			font-size: 85%;
 		}
 
+		span.channel{
+		text-align: center;
+		}
+		
+		a.href{
+		font-color:black;
+		
+		}
 

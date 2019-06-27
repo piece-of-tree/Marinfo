@@ -44,6 +44,7 @@
 				//const title = $(e.target.prev).text()
 				const title = $(e.target).prevAll().text();
 				console.log(title);
+				console.log("Hello");
 				
 				
 				$.post("http://13.231.180.101:5000/delete_rss/",
