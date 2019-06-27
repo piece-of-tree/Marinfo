@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+
+</head>
+<body>
+<ul class="snsbtniti2">
+<li>
+	<a class="flowbtn14 fl_tw14" href="https://twitter.com/share?ref_src=twsrc%5Etfw" target="_blank">
+		<i class="fab fa-twitter-square"></i>
+		<span>Twitter</span>
+	</a>
+
+</li>
+
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet
+</a>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<li><a class="flowbtn14 insta_btn14"><i class="fab fa-instagram"></i><span>Instagram</span></a></li>
+<li><a class="flowbtn14 fl_fb14"><i class="fab fa-facebook-square"></i><span>Facebook</span></a></li>
+<li><a class="flowbtn14 fl_fd14"><i class="fas fa-rss-square"></i><span>Feedly</span></a></li>
+<li><a class="flowbtn14 fl_pk14"><i class="fab fa-get-pocket"></i><span>Pocket</span></a></li>
+<li><a class="flowbtn14 fl_hb14"><i class="fab fa-bootstrap"></i><span>Hatena</span></a></li>
+<li><a class="flowbtn14 fl_yu14"><i class="fab fa-youtube-square"></i><span>YouTube</span></a></li>
+<li><a class="flowbtn14 fl_li14"><i class="fab fa-line"></i><span>LINE＠</span></a></li>
+<li><a class="flowbtn14 fl_ma14"><i class="fas fa-envelope-square"></i><span>Contact</span></a></li>
+<li><a class="flowbtn14 fl_pf14"><i class="fas fa-user-edit"></i><span>Profile</span></a></li>
+</ul>
+
+	<script>
+(function() {
+    var shareButton = document.getElementsByClassName("flowbtn14");
+    for (var i = 0; i < shareButton.length; i++) {
+        shareButton[i].addEventListener("click", function(e) {
+            e.preventDefault();
+            window.open(this.href, "SNS_window", "width=600, height=500, menubar=no, toolbar=no, scrollbars=yes");
+        }, false);
+    }
+})()
+</script>
+</body>
+</html>
