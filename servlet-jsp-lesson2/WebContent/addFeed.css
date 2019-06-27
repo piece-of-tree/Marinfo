@@ -17,6 +17,9 @@
     border-radius: 0px 0px 10px 10px;
 
   }
+  .input{
+    margin-bottom: 10;
+  }
 		figure{
 			border-width: 5px;
 		}
@@ -27,14 +30,14 @@
       left: 80px;
     }
     
- h1{
+ #welcome{
     text-align: center;
   font-size: 50px;
   color: #2c2c2c;
   letter-spacing: .05em;
   text-shadow: 4px 4px 0px #FF7F50, 7px 7px 0px rgba(0, 0, 0, 0.2);
   height: 100px;
-  padding-top: 40px;
+  padding-top: 20px;
     }
     h2{
 color: white;

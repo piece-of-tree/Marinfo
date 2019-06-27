@@ -22,7 +22,7 @@
 		</script> -->
 <meta charset="utf-8">
 <style>
-  body {
+ body {
         background-image: url("background6.jpg");
         background-attachment: fixed;
         background-size: cover;
@@ -110,15 +110,11 @@ text-shadow: 0 1px 0 #ccc, 0 2px 0 black, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0
 				<i class="fa fa-bars"></i>
 			</button>
 			<nav id="menu">
+				
 				<ul>
-
 					<li><a href="top.html"><strong>トップ</strong></a>
           <li><a href="#"><strong>アカウント情報</strong></a></li>
           <li><a href="added-feed.html"><strong>登録済みフィード</strong></a></li>
-					<li><a href="top.jsp">トップ</a>
-					<li><a href="#">アカウント情報</a></li>
-					<li><a href="added-feed_kataoka.jsp">登録済みフィード</a></li>
-
 				</ul>
 			</nav>
 		</div>
