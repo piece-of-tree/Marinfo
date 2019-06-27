@@ -73,3 +73,30 @@ text-shadow: 0 1px 0 #ccc, 0 2px 0 black, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0
   -moz-border-radius: 5px;
   border-radius: 8px;
 }
+#snow {
+  opacity: 1 !important;
+  z-index: 3;
+  background-image: url(https://nguyenthanhvn.com/upload/images/snow1.png), url(https://nguyenthanhvn.com/upload/images/snow2.png), url(https://nguyenthanhvn.com/upload/images/snow3.png);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  -webkit-animation: snow 10s linear infinite;
+  animation: snow 10s linear infinite;
+}
+
+@keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px; }
+  50% {
+    background-position: 500px 500px, 100px 200px, -100px 150px; }
+  100% {
+    background-position: 500px 1000px, 200px 400px, -100px 300px; } }
+@-webkit-keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px; }
+  50% {
+    background-position: 500px 500px, 100px 200px, -100px 150px; }
+  100% {
+    background-position: 500px 1000px, 200px 400px, -100px 300px; } }

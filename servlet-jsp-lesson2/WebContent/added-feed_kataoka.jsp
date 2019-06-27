@@ -22,6 +22,34 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
+<style>
+
+ body {
+        background-image: url("background6.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center center;
+  } 
+  
+  header{
+    background-image: url("hearder4.jpg");
+    background-size: cover;
+    background-position: center center;
+    border: double
+    border-top: #ff0000 solid 0px;
+    border-radius: 0px 0px 10px 10px;
+    }
+  h1,h2{
+    text-align: center;
+  font-size: 50px;
+  color: white;
+  letter-spacing: .05em;
+  text-shadow: 4px 4px 0px #FF7F50, 7px 7px 0px rgba(0, 0, 0, 0.2);
+  height: 100px;
+  padding-top: 20px;
+    } 
+    
+</style>
 
 
 
@@ -152,9 +180,8 @@ figure {
 			</div>
 		</div>
 	</header>
-	<div class="jumbotron text-center">
+	<div class="text-center">
 		<h1>登録済みフィード一覧</h1>
-		<h2>Welcome ${account.userName}</h2>
 
 		<div id="pane">
 			<section id="feed-list">

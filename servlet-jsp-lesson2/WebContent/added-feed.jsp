@@ -19,7 +19,26 @@
 <link rel="stylesheet"
 	href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css">
 <link rel="stylesheet" href="css\style.css">
+<style>
 
+ body {
+        background-image: url("background6.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center center;
+  } 
+  
+  header{
+    background-image: url("hearder4.jpg");
+    background-size: cover;
+    background-position: center center;
+    border: double
+    border-top: #ff0000 solid 0px;
+    border-radius: 0px 0px 10px 10px;
+    }
+    
+    
+</style>
 <script>			
 
 			async function f() {
