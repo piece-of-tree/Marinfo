@@ -49,6 +49,8 @@
     .col-md-4{
       left: 80px;
     }
+    .input{
+    padding-bottom: 20;
     
  #welcome{
     text-align: center;
@@ -57,7 +59,7 @@
   letter-spacing: .05em;
   text-shadow: 4px 4px 0px #FF7F50, 7px 7px 0px rgba(0, 0, 0, 0.2);
   height: 100px;
-  padding-top: 40px;
+  padding-top: 5px;
     }
     h2{
 color: white;
@@ -109,22 +111,23 @@ text-shadow: 0 1px 0 #ccc, 0 2px 0 black, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0
 			</button>
 			<nav id="menu">
 				<ul>
+
 					<li><a href="top.html"><strong>トップ</strong></a>
           <li><a href="#"><strong>アカウント情報</strong></a></li>
           <li><a href="added-feed.html"><strong>登録済みフィード</strong></a></li>
+					<li><a href="top.jsp">トップ</a>
+					<li><a href="#">アカウント情報</a></li>
+					<li><a href="added-feed_kataoka.jsp">登録済みフィード</a></li>
+
 				</ul>
 			</nav>
 		</div>
 	</header>
 	<div class="text-center">
 	<br>
-	<h1 id="welcome">Welcome ${account.userName}</h1>
-		<h2>フィード追加</h2>
-
-
-		
+	<h1 id="welcome">Welcome ${account.userName}</h1>	
 		<form name="URL">
-			<input class="input" type="text" name="URL_text" placeholder="Input URL">
+			<input class="input" type="text" name="URL_text" placeholder="Input URL to add feed">
 			<button" id="rss_button" class="btn btn-primary">追加</button>
 		</form>
 	<br>
@@ -240,21 +243,6 @@ text-shadow: 0 1px 0 #ccc, 0 2px 0 black, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0
 				</div>
 			</div>
 
-
-			<div class="col-md-4">
-				<div class="card" id="card8" style="width: 11em;">
-					<a href=""><img src="img/msn.jpg" class="card-img-top"></a>
-					<div class="card-body">
-						<h5 class="card-title">
-							<strong>MSN News</strong>
-						</h5>
-						<input type="button" id="button8" class="btn btn-primary"
-							value="追加" />
-					</div>
-				</div>
-			</div>
-
-
 			<div class="col-md-4">
 				<div class="card" id="card9" style="width: 11em;">
 					<a href=""><img src="img/yahoo.jpg" class="card-img-top"></a>
@@ -350,19 +338,6 @@ text-shadow: 0 1px 0 #ccc, 0 2px 0 black, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0
              alert("正常にフィードが追加されました"),
             $(this).prop("disabled",true),
             card7.style.background = '#93ff93'
-            );
-        });
-      });
-
-
-      $(function(){
-        $('#button8').click(function(){
-          $.post("http://13.231.180.101:5000/sendtext/",
-            { user: "${account.userName}", ID: "MSN News", url: 'https://rss.msn.com/ja-jp/' },
-            $('#button8').attr('value','追加済み'),
-             alert("正常にフィードが追加されました"),
-            $(this).prop("disabled",true),
-            card8.style.background = '#93ff93'
             );
         });
       });
