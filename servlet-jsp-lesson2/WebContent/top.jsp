@@ -25,6 +25,22 @@ div.card {
 	background-color: #ff8989;
 	left: 200px;
 }
+ body {
+        background-image: url("background6.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center center;
+  } 
+  header{
+    /*background-color: white;*/
+    background-image: url("hearder4.jpg");
+   /* background-attachment: fixed;*/
+    background-size: cover;
+    background-position: center center;
+    /*border-width: 5px;*/
+    border: double
+    border-top: #ff0000 solid 0px;
+    border-radius: 0px 0px 10px 10px;
 </style>
 
 <title>HTML5 Layout sample</title>
@@ -119,7 +135,6 @@ div.card {
 						height="50">
 					</a>
 				</h1>
-				<h2>Welcome ${account.userName}</h2>
 			</section>
 		</div>
 
@@ -129,14 +144,14 @@ div.card {
 			</button>
 			<div id="menu">
 				<ul>
-					<li><a href="#">アカウント情報</a></li>
-					<li><a href="add-feed.jsp">フィード追加</a></li>
-					<li><a href="added-feed_kataoka.jsp">登録済みフィード</a></li>
+					<li><a href="#"><strong>アカウント情報</strong></a></li>
+					<li><a href="add-feed.jsp"><strong>フィード追加</strong></a></li>
+					<li><a href="added-feed_kataoka.jsp"><strong>登録済みフィード</strong></a></li>
 				</ul>
 			</div>
 		</div>
 	</header>
-
+	
 	<!-- <ul id="feed-list"></ul> -->
 
 	<div id="pane">
