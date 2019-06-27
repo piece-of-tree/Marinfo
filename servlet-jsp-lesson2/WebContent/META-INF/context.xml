@@ -2,7 +2,7 @@
    <Resource name="ds/mariadb/test" 
              type="javax.sql.DataSource"
              driverClassName="org.mariadb.jdbc.Driver"
-             url="jdbc:mariadb://localhost/test"
+             url="jdbc:mariadb://54.249.16.147/test"
              username="root"
              password="mariadb"
    />
