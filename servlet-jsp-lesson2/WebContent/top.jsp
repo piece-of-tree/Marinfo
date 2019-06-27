@@ -79,7 +79,7 @@ div.card {
 					$('#feed-list').append(di);
 				}
 	        	//console.log(feeds[i].channel);
-	        	di.append('<div class="card c-3"><div class="font"><p><li><a href="' + feeds[i].link + '">' + feeds[i].title + '<br><br><span class="font2">' + feeds[i].date + '</span></a></li></p><span>' + feeds[i].channel + '</span></div></div>');
+	        	di.append('<div class="card c-3"><div class="font"><span><li><a href="' + feeds[i].link + '">' + feeds[i].title + '<br><br><span class="font2">' + feeds[i].date + '</span></a></li></span><span>' + feeds[i].channel + '</span></div></div>');
 	        	count++;
 	        	if (count % 3 ==0){
 					di.append('</div>');
