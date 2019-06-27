@@ -8,23 +8,13 @@
 	<title>Paper Stack</title>
 	<link rel="stylesheet" type="text/css" href="css/sign-insty.css">
 
-	<script>
-    $(function(){
-        $('#signup-btn').click(function(){
-        	var form = document.forms.URL.URL_text.value;  
-        	console.log(form);
-          $.post("http://13.231.180.101:5000/sendRSS/",
-            { user: "${account.userName}", url: form });
-        });
-      });	
-	</script>
-
 
 </head>
 <body>
-
+	
 	<div class="container">
 		<section id="content">
+		<h1>アカウント登録</h1>
 			<!--  
 			<form action="">
 				<h1>アカウント登録</h1>
@@ -44,6 +34,7 @@
 
 			</form>
 			-->
+			
 			<div class="row">
 				<form class="col s12" action="sign-up.do" method="post">
 					<div class="row">
