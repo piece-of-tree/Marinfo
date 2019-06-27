@@ -63,7 +63,17 @@ text-shadow: 0 1px 0 #ccc, 0 2px 0 black, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0
     padding: 3rem 0;
   }
 }
-
+.inputurl{
+	width: 300px;
+  height: 40px;
+  background: #DCDCDC;
+  font-size: 12pt;
+  color: white;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 8px;
+}
 .snow {
   position: absolute;
   min-width: 100vw;

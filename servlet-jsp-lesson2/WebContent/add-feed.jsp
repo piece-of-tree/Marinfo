@@ -22,51 +22,7 @@
 		</script> -->
 <meta charset="utf-8">
 <style>
- body {
-        background-image: url("background6.jpg");
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center center;
-  } 
-  header{
-    /*background-color: white;*/
-    background-image: url("hearder4.jpg");
-   /* background-attachment: fixed;*/
-    background-size: cover;
-    background-position: center center;
-    /*border-width: 5px;*/
-    border: double
-    border-top: #ff0000 solid 0px;
-    border-radius: 0px 0px 10px 10px;
-
-  }
-  figure{
-			border-width: 5px;
-  }
-    .container{
-      text-align: center;
-    }
-    .col-md-4{
-      left: 80px;
-    }
-    .input{
-    padding-bottom: 20;
-    
- #welcome{
-    text-align: center;
-  font-size: 50px;
-  color: #2c2c2c;
-  letter-spacing: .05em;
-  text-shadow: 4px 4px 0px #FF7F50, 7px 7px 0px rgba(0, 0, 0, 0.2);
-  height: 100px;
-  padding-top: 5px;
-    }
-    h2{
-color: white;
-font-size: 2em;
-text-shadow: 0 1px 0 #ccc, 0 2px 0 black, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
-}
-
+ 
   </style>
 </head>
 
@@ -123,7 +79,7 @@ text-shadow: 0 1px 0 #ccc, 0 2px 0 black, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0
 	<br>
 	<h1 id="welcome">Welcome ${account.userName}</h1>	
 		<form name="URL">
-			<input class="input" type="text" name="URL_text" placeholder="Input URL to add feed">
+			<input class="inputurl" type="text" name="URL_text" placeholder="Input URL to add feed">
 			<button" id="rss_button" class="btn btn-primary">追加</button>
 		</form>
 	<br>

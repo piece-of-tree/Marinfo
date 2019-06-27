@@ -1,249 +1,99 @@
-@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Corben:700');
+    body {
+        background-image: url("background6.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center center;
+  } 
+  header{
+    /*background-color: white;*/
+    background-image: url("hearder4.jpg");
+   /* background-attachment: fixed;*/
+    background-size: cover;
+    background-position: center center;
+    /*border-width: 5px;*/
+    border: double
+    border-top: #ff0000 solid 0px;
+    border-radius: 0px 0px 10px 10px;
 
-
-
-body {
-	margin: 0;
-	font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif;
-}
-
-#site h1 {
-	margin: 0;
-}
-
-/* ヘッダー画像 */
-#topimg	{
-	max-width: 100%;
-	height: auto;
-	vertical-align: bottom;
-}
-
-
-/* footerをバーの形にする */
-footer {
-	padding-top: 15px;
-	padding-bottom: 15px;
-	background-color: #dddddd;
-}
-
-/* ボックスの左右 */
-header, footer, article#main, #etc-box {
-	padding-left: 15px;
-	padding-right: 15px;
-}
-
-/* ボックスの上下 */
-header {
-	padding-top: 20px;
-	padding-bottom: 10px;
-}
-
-article#main {
-	padding-top: 20px;
-}
-
-#etc-box {
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
-
-#news-box {
-	padding-bottom: 20px;
-}
-
-#abstract-box1, #abstract-box2, #abstract-box3 {
-	padding-bottom: 10px;
-}
-
-/* 以下RWD用設定 */
-
-
-
-/* ########### 767px以下 ########### */
-@media (max-width: 767px) {
-
-	/* トグルボタン */
-	#menubtn {
-		padding: 6px 12px;
-		border: solid 1px #aaaaaa;
-		border-radius: 5px;
-		background-color: #ffffff;
-		position: absolute;
-		top: 20px;
-		right: 15px;
-		cursor: pointer;
-	}
-
-	#menubtn:hover {
-		background-color: #dddddd;
-	}
-
-	#menubtn i {
-		color: #888888;
-		font-size: 18px;
-	}
-
-	/* ナビゲーションメニュー（縦並び） */
-	nav	{
-		display: none;
-	}
-
-	nav ul {margin: 0;
-		padding: 0;
-		list-style: none;
-	}
-
-	nav li a {
-		display: block;
-		padding: 5px;
-		color: #000000;
-		font-size: 14px;
-		text-decoration: none;
-	}
-
-	nav li a:hover {
-		background-color: #eeeeee;
-	}
-}
-
-
-/* ########### 768px以上 ########### */
-@media (min-width: 768px) {
-
-	/* トグルボタン */
-	#menubtn {
-		display: none;
-	}
-
-	/* ナビゲーション */
-	nav	{
-		display: block !important;
-	}
-
-	nav ul {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-	}
-
-	nav li a {
-		display: block;
-		padding: 10px 15px;
-		color: #000000;
-		font-size: 14px;
-		text-decoration: none;
-	}
-
-	nav li a:hover {
-		background-color: #eeeeee;
-	}
-
-	nav li {
-		float: left;
-		width: auto;
-	}
-
-	header:after {
-		content: "";
-		display: block;
-		clear: both;
-	}
-
-	#site-box {
-		float: left;
-		width: auto;
-	}
-
-	#nav-box {
-		float: right;
-		width: auto;
-	}
-
-	#etc-box:after {
-		content: "";
-		display: block;
-		clear: both;
-	}
-
-	#news-box {
-		float: left;
-		width: 70%;
-		padding-right: 35px;
-		-moz-box-sizing: border-box;
-		-webkit-box-sizing: border-box;
-		box-sizing: border-box;
-	}
-
-	aside {
-		float: left;
-		width: 30%;
-	}
-
-	article#main:after	{
-		content: "";
-		display: block;
-		clear: both;
-	}
-
-	#abstract-box1	{
-		float: left;
-		width: 32%;
-		margin-right: 2%;
-	}
-
-	#abstract-box2	{
-		float: left;
-		width: 32%;
-		margin-right: 2%;
-	}
-
-	#abstract-box3 {
-		float: left;
-		width: 32%;
-	}
-}
-
-/* ########### 1190px以上 ########### */
-@media (min-width: 1190px) {
-
-	/* 全体の横幅を固定 */
-	header, #top-box, #etc-box, .copyright, article#main {
-		width: 1140px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	/* headerの下に罫線を挿入 */
-	header {
-		margin-bottom: 20px;
-		border-bottom: solid 1px #dddddd;
-	}
-}
-	div.r{
-		list-style: none;
-		overflow: hidden;
-	}
-
-/*表示カードの詳細設定*/
-/*ココらへんいじると箱がでっかくなったり小さくなったりするよ*/
-
-
-/*記事カード内の詳細設定*/
-/*箱の中の文字とかいろいろ決められるよ*/
-		.font{
-			font-size: 125%;
-			float: left;
-
-			font-family: 'Kosugi Maru', sans-serif;
+  }
+		figure{
+			border-width: 5px;
 		}
+    .container{
+      text-align: center;
+    }
+    .col-md-4{
+      left: 80px;
+    }
+    
+ .welcome{
+    text-align: center;
+  font-size: 50px;
+  color: #2c2c2c;
+  letter-spacing: .05em;
+  text-shadow: 4px 4px 0px #FF7F50, 7px 7px 0px rgba(0, 0, 0, 0.2);
+  height: 100px;
+  padding-top: 40px;
+    }
+    .hit-the-floor {
+color: white;
+font-size: 2em;
+text-shadow: 0 1px 0 #ccc, 0 2px 0 black, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
 
-		#endinfo{
-			text-align: center;
-		}
+.hit-the-floor {
+  text-align: center;
+}
+.hero {
+  min-height: 100vh;
+  min-height: 3rem;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  
+  &__content {
+    position: relative;
+    align-self: center;
+    padding: 3rem 0;
+  }
+}
 
-		p.font2{
-			font-family: 'Julius Sans One', sans-serif;
-			font-size: 85%;
-		}
+.snow {
+  position: absolute;
+  min-width: 100vw;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
 
+.snow .svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#snow-top-layer {
+  will-change: transform;
+  transform: translateY(-768px);
+  animation: fall 22.5s infinite linear;
+}
+
+#snow-bottom-layer {
+  will-change: transform;
+  transform: translateY(-768px);
+  animation: fall 45s infinite linear;
+}
+
+@keyframes fall {
+  
+  100% {
+    transform: translateY(0);
+  }
+  
+}
 
