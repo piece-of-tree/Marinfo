@@ -12,6 +12,7 @@
 <link rel="stylesheet"
 	href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css">
 <link rel="stylesheet" href="css\style1.css">
+<link rel="stylesheet" href="addFeed.css">
 <!-- 	<script>
 			$(() => {
 				$("#menubtn").on('click', () => {
@@ -21,18 +22,50 @@
 		</script> -->
 <meta charset="utf-8">
 <style>
-   header{
-   background-color: white;
-   }
-	body {
-        background-image: url("background.png");
-        
-        
-	} 
-	figure {
-	border-width: 5px;
-	}
-</style> 
+  body {
+        background-image: url("background6.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center center;
+  } 
+  header{
+    /*background-color: white;*/
+    background-image: url("hearder4.jpg");
+   /* background-attachment: fixed;*/
+    background-size: cover;
+    background-position: center center;
+    /*border-width: 5px;*/
+    border: double
+    border-top: #ff0000 solid 0px;
+    border-radius: 0px 0px 10px 10px;
+
+  }
+  figure{
+			border-width: 5px;
+  }
+    .container{
+      text-align: center;
+    }
+    .col-md-4{
+      left: 80px;
+    }
+    
+ #welcome{
+    text-align: center;
+  font-size: 50px;
+  color: #2c2c2c;
+  letter-spacing: .05em;
+  text-shadow: 4px 4px 0px #FF7F50, 7px 7px 0px rgba(0, 0, 0, 0.2);
+  height: 100px;
+  padding-top: 40px;
+    }
+    h2{
+color: white;
+font-size: 2em;
+text-shadow: 0 1px 0 #ccc, 0 2px 0 black, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+
+  </style>
 </head>
 
 <body>
@@ -76,18 +109,17 @@
 			</button>
 			<nav id="menu">
 				<ul>
-					<li><a href="top.jsp">トップ</a>
-					<li><a href="#">アカウント情報</a></li>
-					<li><a href="added-feed.jsp">登録済みフィード</a></li>
+					<li><a href="top.html"><strong>トップ</strong></a>
+          <li><a href="#"><strong>アカウント情報</strong></a></li>
+          <li><a href="added-feed.html"><strong>登録済みフィード</strong></a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
-
 	<div class="text-center">
 	<br>
-	<h2 style="color:white;">Welcome ${account.userName}</h2>
-		<h1 style="color:white;">フィード追加</h1>
+	<h1 id="welcome">Welcome ${account.userName}</h1>
+		<h2>フィード追加</h2>
 
 
 		
