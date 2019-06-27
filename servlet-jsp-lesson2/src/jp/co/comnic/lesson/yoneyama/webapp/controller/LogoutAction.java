@@ -11,6 +11,6 @@ public class LogoutAction implements Action {
     @Override
     public Dispatcher execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     	request.getSession().invalidate();
-        return new Redirector(request, response, "login");
+        return new Redirector(request, response, "sign-in.html");
     }
 }

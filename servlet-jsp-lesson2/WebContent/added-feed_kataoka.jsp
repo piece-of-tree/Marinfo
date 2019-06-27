@@ -68,6 +68,18 @@
 
 <script>
 		$(() => {
+
+			$(document).on('click', '.delete', function(e){
+				const title = $(e.target).prevAll().text();
+				console.log(title);
+				console.log("Hello");
+				
+				
+				$.post("http://13.231.180.101:5000/delete_rss/",
+						{ del_title: title, user: "${account.userName}" });
+			});
+			
+			/*
 			$('.delete').click(e => {
 				//const title = $(e.target.prev).text()
 				const title = $(e.target).prevAll().text();
@@ -79,19 +91,26 @@
 						{ del_title: title, user: "${account.userName}" });
 				
 			});
+			*/
 		});
 </script>
 
 <script>
-	
+//Ajaxに渡すデータ
+var dt = { user: "${account.userName}" }; 
+
+//Ajax通信を行う
+$.ajax({
+    url:"http://13.231.180.101:5000/sendName_rss/",
+    type:"POST",
+    async: false,
+    dataType:"json",
+    data:dt
+})
 
 	async function doF() {
-	    console.log(await f());
+	    //console.log(await f());
 	    
-
-	    // simulate asynchronous processing ...
-	    const startMsec = new Date();
-	    while (new Date() - startMsec < 4000);
 	    
 		let count = 0;
 		$.getJSON('http://13.231.180.101:5000/get_channels/', data =>  {
@@ -115,10 +134,12 @@
 	        	//console.log(feeds[i].channel);
 	        	di.append('<div class="card c-3"><div class="font"><span><li><div>' + data[i].rss + '</div><br><br><button class="delete">ButtonA</button></li></span></div></div>');
 	        	count++;
+	        	console.log(di)
+	        	/*
 	        	if (count % 3 ==0){
 					di.append('</div>');
-				}
-	        	
+				} 
+	        	*/
 	        }
 			
 		});
@@ -126,7 +147,6 @@
 	}
 
 	doF();
-		
 		
 </script>
 
@@ -174,8 +194,8 @@ figure {
 			<div id="menu">
 				<ul>
 					<li><a href="top.jsp">トップ</a>
-					<li><a href="#">アカウント情報</a></li>
 					<li><a href="add-feed.jsp">フィード追加</a></li>
+					<li><a href="logout.do"><strong>ログアウト</strong></a></li>
 				</ul>
 			</div>
 		</div>
@@ -188,9 +208,6 @@ figure {
 			</section>
 		</div>
 	</div>
-
-
-
 
 </body>
 </html>

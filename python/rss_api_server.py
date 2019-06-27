@@ -156,5 +156,18 @@ def sendName():
 
     return jsonify(res='ok')
 
+
+@app.route('/delete_rss/', methods=['POST'])
+def delete_rss():
+    
+    del_rss = request.form['del_rss']
+    user = request.form['user']
+    redis.hdel(user, del_rss)
+    
+    print(user)
+    print(del_rss)
+    
+    return jsonify(res='ok')
+
 if __name__ == "__main__":
     app.run(debug=True)
