@@ -66,9 +66,9 @@
 			</button>
 			<div id="menu">
 				<ul>
-					<li><a href="top.jsp"><strong>トップ</strong></a></li>
-					<li><a href="#"><strong>アカウント情報</strong></a></li>					
+					<li><a href="top.jsp"><strong>トップ</strong></a></li>				
 					<li><a href="added-feed_kataoka.jsp"><strong>登録済みフィード</strong></a></li>
+					<li><a href="logout.do"><strong>ログアウト</strong></a></li>
 				</ul>
 			</div>
 		</div>

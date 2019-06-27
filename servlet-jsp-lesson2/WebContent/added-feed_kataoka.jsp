@@ -166,8 +166,8 @@ figure {
 			<div id="menu">
 				<ul>
 					<li><a href="top.jsp">トップ</a>
-					<li><a href="#">アカウント情報</a></li>
 					<li><a href="add-feed.jsp">フィード追加</a></li>
+					<li><a href="logout.do"><strong>ログアウト</strong></a></li>
 				</ul>
 			</div>
 		</div>

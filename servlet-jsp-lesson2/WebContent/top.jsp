@@ -155,7 +155,7 @@ $.ajax({
 				<ul>
 					<li><a href="add-feed.jsp"><strong>フィード追加</strong></a></li>
 					<li><a href="added-feed_kataoka.jsp"><strong>登録済みフィード</strong></a></li>
-					<li><a href="#"><strong>ログアウト</strong></a></li>
+					<li><a href="logout.do"><strong>ログアウト</strong></a></li>
 				</ul>
 			</div>
 		</div>
