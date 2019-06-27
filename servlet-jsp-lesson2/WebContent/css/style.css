@@ -86,6 +86,7 @@ article#main {
 	/* ナビゲーションメニュー（縦並び） */
 	#menu	{
 		display: none;
+		font-weight:bold;
 	}
 
 	#menu ul {margin: 0;

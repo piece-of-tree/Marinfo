@@ -11,7 +11,7 @@
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
 <link rel="stylesheet"
 	href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css">
-<link rel="stylesheet" href="css\style1.css">
+<link rel="stylesheet" href="css\style.css">
 <link rel="stylesheet" href="addFeed.css">
 <!-- 	<script>
 			$(() => {
@@ -49,8 +49,7 @@
         });
       });	
 	</script>
-	
-	<header>
+<header>
 		<div id="site-box">
 			<section id="site">
 				<h1>
@@ -65,16 +64,17 @@
 			<button type="button" id="menubtn">
 				<i class="fa fa-bars"></i>
 			</button>
-			<nav id="menu">
-				
+			<div id="menu">
 				<ul>
-					<li><a href="top.html"><strong>トップ</strong></a>
-          <li><a href="#"><strong>アカウント情報</strong></a></li>
-          <li><a href="added-feed.html"><strong>登録済みフィード</strong></a></li>
+					<li><a href="top.jsp"><strong>トップ</strong></a></li>
+					<li><a href="#"><strong>アカウント情報</strong></a></li>					
+					<li><a href="added-feed_kataoka.jsp"><strong>登録済みフィード</strong></a></li>
 				</ul>
-			</nav>
+			</div>
 		</div>
 	</header>
+
+
 	<div class="text-center">
 	<br>
 	<h1 id="welcome">Welcome ${account.userName}</h1>	
@@ -85,7 +85,7 @@
 	<br>
 	</div>
 <p>&nbsp</p>
-
+	
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4">
@@ -209,6 +209,7 @@
 				</div>
 			</div>
 		</div>
+	</div>
 		<script>
       $(function(){
         $('#button1').click(function(){
