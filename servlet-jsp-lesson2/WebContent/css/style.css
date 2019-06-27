@@ -98,7 +98,7 @@ article#main {
 		display: block;
 		padding: 5px;
 		color: #000000;
-		font-size: 14px;
+		font-size: 100px;
 		text-decoration: none;
 	}
 
@@ -131,7 +131,8 @@ article#main {
 		display: block;
 		padding: 10px 15px;
 		color: #000000;
-		font-size: 14px;
+		/*font-size: 14px;*/
+		font-weight: bold;
 		text-decoration: none;
 	}
 
