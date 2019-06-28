@@ -132,7 +132,7 @@ $.ajax({
 					$('#feed-list').append(di);
 				}
 	        	//console.log(feeds[i].channel);
-	        	di.append('<div class="card c-3"><div class="font"><span><li><div>' + data[i].rss + '</div><br><br><button class="delete">ButtonA</button></li></span></div></div>');
+	        	di.append('<div class="card c-3"><div class="font"><span><li><div>' + data[i].rss + '</div><br><br><button class="delete">削除</button></li></span></div></div>');
 	        	count++;
 	        	console.log(di)
 	        	/*
