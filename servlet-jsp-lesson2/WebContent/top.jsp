@@ -37,6 +37,12 @@ header {
 
 <title>HTML5 Layout sample</title>
 
+<link rel="stylesheet" type="text/css" href="css/sns.css">
+
+
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
 <link rel="stylesheet"
 	href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css">
 
@@ -104,7 +110,9 @@ $.ajax({
 					$('#feed-list').append(di);
 				}
 	        	//console.log(feeds[i].channel);
-	        	di.append('<div class="card c-3"><div class="font"><span><li><a href="' + feeds[i].link + '">' + feeds[i].title + '<br><br><span class="font2">' + feeds[i].date + '</span></a></li></span><span ="channel">' + feeds[i].channel + '</span></div></div>');
+	        	di.append('<div class="card c-3"><div class="font"><span><li><a href="' + feeds[i].link + '">' 
+	        			+ feeds[i].title + '<br><br><span class="font2">' 	
+	        			+ feeds[i].date + '</span></a></li></span>  <li><a class="flowbtn14 fl_tw14" href="https://twitter.com/share?url=' + feeds[i].link +'&text='+ feeds[i].title + '" target="_blank"><i class="fab fa-twitter-square"></i> <span>Twitter</span></a></li>    <span ="channel">' + feeds[i].channel + '</span></div></div>');
 	        	count++;
 	        	if (count % 3 ==0){
 					di.append('</div>');
@@ -162,12 +170,41 @@ $.ajax({
 	</header>
 
 	<!-- <ul id="feed-list"></ul> -->
+	<ul class="snsbtniti2">
 
-	<div id="pane">
-		<section id="feed-list"></section>
-	</div>
+		
+			<div id="pane">
+				<section id="feed-list"></section>
+			</div>
+	</ul>
+
 
 	<div id="endinfo">これ以上記事はありません</div>
+
+	<script>
+(function() {
+    var shareButton = document.getElementsByClassName("flowbtn14");
+    for (var i = 0; i < shareButton.length; i++) {
+        shareButton[i].addEventListener("click", function(e) {
+            e.preventDefault();
+            window.open(this.href, "SNS_window", "width=600, height=500, menubar=no, toolbar=no, scrollbars=yes");
+        }, false);
+    }
+})()
+
+	$(() => {
+
+			$(document).on('click', '.flowbtn14', function(e){
+
+				
+				e.preventDefault();
+				console.log(e.target.parentNode);
+		        window.open(e.target.parentNode, "SNS_window", "width=600, height=500, menubar=no, toolbar=no, scrollbars=yes");
+			});
+			
+
+		});
+	</script>
 </body>
 
 </html>
